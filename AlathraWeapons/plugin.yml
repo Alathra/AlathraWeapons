@@ -1,0 +1,9 @@
+name: AlathraWeapons
+version: 1.0
+api-version: 1.18
+author: ShermansWorld
+main: me.ShermansWorld.AlathraWeapons.Main
+
+commands:
+  weapons:
+    description: give weapons
