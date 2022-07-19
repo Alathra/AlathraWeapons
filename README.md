@@ -8,6 +8,6 @@ Each weapon has its own crafting recipe.
 Each weapon has an iron and netherite variant with most recipes being identical but a few being slightly different
 
 ### Resourcepack
-You must use the AlathraMC resource pack for these weapons to work
+You must use the AlathraMC resource pack for these weapons to work. See "resourcepackDEV.zip"
 
 
