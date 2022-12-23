@@ -1,4 +1,4 @@
-# AlathraWeapons Verison 1.1.1
+# AlathraWeapons Verison 1.2
 ## A plugin that adds 18+ custom weapon variants cosmetic only
 
 ### Crafting Recipes
