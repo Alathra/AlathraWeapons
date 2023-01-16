@@ -53,6 +53,8 @@ public class Main extends JavaPlugin {
     weaponsMasterList2.add(new Weapon2("iron", "axe", "Iron Battle Hoe", 15004));
     weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Battle Hoe", 15104));
     weaponsMasterList2.add(new Weapon2("netherite", "axe", "Obsidian Obliterator", 15105));
+    weaponsMasterList2.add(new Weapon2("iron", "sword", "Iron Twin Blade", 14813));
+    weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Twin Blade", 14913));
   }
   
   public void onEnable() {
