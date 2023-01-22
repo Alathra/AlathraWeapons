@@ -55,6 +55,8 @@ public class Main extends JavaPlugin {
     weaponsMasterList2.add(new Weapon2("netherite", "axe", "Obsidian Obliterator", 15105));
     weaponsMasterList2.add(new Weapon2("iron", "sword", "Iron Scimitar", 14814));
     weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Scimitar", 14914));
+    weaponsMasterList2.add(new Weapon2("iron", "sword", "Iron Rapier", 14815));
+    weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Rapier", 14915));
   }
   
   public void onEnable() {
@@ -104,6 +106,8 @@ public class Main extends JavaPlugin {
     customRecipes.obsidianObliteratorRecipe();
     customRecipes.ironScimitarRecipe();
     customRecipes.netheriteScimitarRecipe();
+    customRecipes.ironRapierRecipe();
+    customRecipes.netheriteRapierRecipe();
   }
   
   public void onDisable() {}

@@ -468,4 +468,26 @@ public class CraftingRecipes implements Listener {
 		netheriteScimitarRecipe.setIngredient('$', Material.STICK);
 		Main.getInstance().getServer().addRecipe((Recipe) netheriteScimitarRecipe);
 	}
+	
+	public void ironRapierRecipe() {
+		ItemStack ironRapier = ((Weapon2) Main.weaponsMasterList2.get(41)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "42");
+		ShapedRecipe ironRapierRecipe = new ShapedRecipe(key, ironRapier);
+		ironRapierRecipe.shape(new String[] { "  @", " @ ", "%  " });
+		ironRapierRecipe.setIngredient('@', Material.IRON_INGOT);
+		ironRapierRecipe.setIngredient('%', Material.LIGHTNING_ROD);
+		Main.getInstance().getServer().addRecipe((Recipe) ironRapierRecipe);
+	}
+	
+	public void netheriteRapierRecipe() {
+		ItemStack netheriteRapier = ((Weapon2) Main.weaponsMasterList2.get(42)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "43");
+		ShapedRecipe netheriteRapierRecipe = new ShapedRecipe(key, netheriteRapier);
+		netheriteRapierRecipe.shape(new String[] { "  @", " @ ", "%  " });
+		netheriteRapierRecipe.setIngredient('@', Material.NETHERITE_INGOT);
+		netheriteRapierRecipe.setIngredient('%', Material.LIGHTNING_ROD);
+		Main.getInstance().getServer().addRecipe((Recipe) netheriteRapierRecipe);
+	}
 }
