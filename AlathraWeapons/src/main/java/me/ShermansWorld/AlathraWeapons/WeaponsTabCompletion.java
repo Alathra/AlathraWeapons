@@ -48,6 +48,8 @@ public class WeaponsTabCompletion implements TabCompleter {
       completions.add("Netherite_Hatchet");
       completions.add("Netherite_Battle_Hoe");
       completions.add("Obsidian_Obliterator");
+      completions.add("Iron_Scimitar");
+      completions.add("Netherite_Scimitar");
       return completions;
     } 
     return Collections.emptyList();
