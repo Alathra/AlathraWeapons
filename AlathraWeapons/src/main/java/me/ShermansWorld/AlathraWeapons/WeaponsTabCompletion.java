@@ -52,6 +52,8 @@ public class WeaponsTabCompletion implements TabCompleter {
       completions.add("Netherite_Scimitar");
       completions.add("Iron_Rapier");
       completions.add("Netherite_Rapier");
+      completions.add("Iron_Scythe");
+      completions.add("Netherite_Scythe");
       return completions;
     } 
     return Collections.emptyList();

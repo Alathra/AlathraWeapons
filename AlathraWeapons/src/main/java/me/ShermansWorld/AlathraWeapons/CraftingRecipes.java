@@ -490,4 +490,29 @@ public class CraftingRecipes implements Listener {
 		netheriteRapierRecipe.setIngredient('%', Material.LIGHTNING_ROD);
 		Main.getInstance().getServer().addRecipe((Recipe) netheriteRapierRecipe);
 	}
+	
+	public void ironScytheRecipe() {
+		ItemStack ironScythe = ((Weapon2) Main.weaponsMasterList2.get(43)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "44");
+		ShapedRecipe ironScytheRecipe = new ShapedRecipe(key, ironScythe);
+		ironScytheRecipe.shape(new String[] { "@@%", " $ ", "$  " });
+		ironScytheRecipe.setIngredient('@', Material.IRON_INGOT);
+		ironScytheRecipe.setIngredient('%', Material.GOLD_NUGGET);
+		ironScytheRecipe.setIngredient('$', Material.IRON_BARS);
+		Main.getInstance().getServer().addRecipe((Recipe) ironScytheRecipe);
+	}
+	
+	public void netheriteScytheRecipe() {
+		ItemStack netheriteScythe = ((Weapon2) Main.weaponsMasterList2.get(44)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "45");
+		ShapedRecipe netheriteScytheRecipe = new ShapedRecipe(key, netheriteScythe);
+		netheriteScytheRecipe.shape(new String[] { "@@%", " $ ", "$  " });
+		netheriteScytheRecipe.setIngredient('@', Material.NETHERITE_INGOT);
+		netheriteScytheRecipe.setIngredient('%', Material.GOLD_NUGGET);
+		netheriteScytheRecipe.setIngredient('$', Material.NETHERITE_SCRAP);
+		Main.getInstance().getServer().addRecipe((Recipe) netheriteScytheRecipe);
+	}
+	
 }

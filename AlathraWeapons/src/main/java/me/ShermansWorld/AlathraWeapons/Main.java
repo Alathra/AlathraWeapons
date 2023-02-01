@@ -57,6 +57,8 @@ public class Main extends JavaPlugin {
     weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Scimitar", 14914));
     weaponsMasterList2.add(new Weapon2("iron", "sword", "Iron Rapier", 14815));
     weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Rapier", 14915));
+    weaponsMasterList2.add(new Weapon2("iron", "axe", "Iron Scythe", 15005));
+    weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Scythe", 15106));
   }
   
   public void onEnable() {
@@ -108,6 +110,8 @@ public class Main extends JavaPlugin {
     customRecipes.netheriteScimitarRecipe();
     customRecipes.ironRapierRecipe();
     customRecipes.netheriteRapierRecipe();
+    customRecipes.ironScytheRecipe();
+    customRecipes.netheriteScytheRecipe();
   }
   
   public void onDisable() {}
