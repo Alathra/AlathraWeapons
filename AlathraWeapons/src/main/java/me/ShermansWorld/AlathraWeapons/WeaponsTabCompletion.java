@@ -76,6 +76,12 @@ public class WeaponsTabCompletion implements TabCompleter {
 			completions.add("Diamond_Halberd");
 			completions.add("Diamond_Battle_Hoe");
 			completions.add("Diamond_Scythe");
+			completions.add("Iron_Hook");
+			completions.add("Diamond_Hook");
+			completions.add("Netherite_Hook");
+			completions.add("Iron_Mace");
+			completions.add("Diamond_Mace");
+			completions.add("Netherite_Mace");
 			return completions;
 		}
 		return Collections.emptyList();

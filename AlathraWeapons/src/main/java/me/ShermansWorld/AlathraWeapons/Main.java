@@ -81,6 +81,13 @@ public class Main extends JavaPlugin {
     weaponsMasterList2.add(new Weapon2("diamond", "axe", "Diamond Halberd", 536));
     weaponsMasterList2.add(new Weapon2("diamond", "axe", "Diamond Battle Hoe", 537));
     weaponsMasterList2.add(new Weapon2("diamond", "axe", "Diamond Scythe", 539));
+    weaponsMasterList2.add(new Weapon2("iron", "sword", "Iron Hook", 43));
+    weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Hook", 343));
+    weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Hook", 143));
+    weaponsMasterList2.add(new Weapon2("iron", "sword", "Iron Mace", 44));
+    weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Mace", 344));
+    weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Mace", 144));
+    
     
   }
   
@@ -157,6 +164,12 @@ public class Main extends JavaPlugin {
     customRecipes.diamondHalberdRecipe();
     customRecipes.diamondBattleHoeRecipe();
     customRecipes.diamondScytheRecipe();
+    customRecipes.ironHookRecipe();
+    customRecipes.diamondHookRecipe();
+    customRecipes.netheriteHookRecipe();
+    customRecipes.ironMaceRecipe();
+    customRecipes.diamondMaceRecipe();
+    customRecipes.netheriteMaceRecipe();
   }
   
   public void onDisable() {}

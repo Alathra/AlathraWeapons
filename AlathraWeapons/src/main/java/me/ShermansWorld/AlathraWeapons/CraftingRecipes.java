@@ -761,4 +761,75 @@ public class CraftingRecipes implements Listener {
 		Main.getInstance().getServer().addRecipe((Recipe) diamondScytheRecipe);
 	}
 	
+	public void ironHookRecipe() {
+		ItemStack ironHook = ((Weapon2) Main.weaponsMasterList2.get(67)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "68");
+		ShapedRecipe ironHookRecipe = new ShapedRecipe(key, ironHook);
+		ironHookRecipe.shape(new String[] { " @@", " % ", " $ " });
+		ironHookRecipe.setIngredient('@', Material.IRON_NUGGET);
+		ironHookRecipe.setIngredient('%', Material.IRON_INGOT);
+		ironHookRecipe.setIngredient('$', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) ironHookRecipe);
+	}
+	
+	public void diamondHookRecipe() {
+		ItemStack ironHook = ((Weapon2) Main.weaponsMasterList2.get(68)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "69");
+		ShapedRecipe ironHookRecipe = new ShapedRecipe(key, ironHook);
+		ironHookRecipe.shape(new String[] { " @@", " @ ", " $ " });
+		ironHookRecipe.setIngredient('@', Material.DIAMOND);
+		ironHookRecipe.setIngredient('$', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) ironHookRecipe);
+	}
+	
+	public void netheriteHookRecipe() {
+		ItemStack netheriteHook = ((Weapon2) Main.weaponsMasterList2.get(69)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "70");
+		ShapedRecipe netheriteHookRecipe = new ShapedRecipe(key, netheriteHook);
+		netheriteHookRecipe.shape(new String[] { " @@", " % ", " $ " });
+		netheriteHookRecipe.setIngredient('@', Material.NETHERITE_SCRAP);
+		netheriteHookRecipe.setIngredient('%', Material.NETHERITE_INGOT);
+		netheriteHookRecipe.setIngredient('$', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) netheriteHookRecipe);
+	}
+	
+	public void ironMaceRecipe() {
+		ItemStack ironMace = ((Weapon2) Main.weaponsMasterList2.get(70)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "71");
+		ShapedRecipe ironMaceRecipe = new ShapedRecipe(key, ironMace);
+		ironMaceRecipe.shape(new String[] { "  @", " % ", "$  " });
+		ironMaceRecipe.setIngredient('@', Material.IRON_INGOT);
+		ironMaceRecipe.setIngredient('%', Material.STICK);
+		ironMaceRecipe.setIngredient('$', Material.LEATHER);
+		Main.getInstance().getServer().addRecipe((Recipe) ironMaceRecipe);
+	}
+	
+	public void diamondMaceRecipe() {
+		ItemStack diamondMace = ((Weapon2) Main.weaponsMasterList2.get(71)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "72");
+		ShapedRecipe diamondMaceRecipe = new ShapedRecipe(key, diamondMace);
+		diamondMaceRecipe.shape(new String[] { "  @", " % ", "$  " });
+		diamondMaceRecipe.setIngredient('@', Material.DIAMOND);
+		diamondMaceRecipe.setIngredient('%', Material.STICK);
+		diamondMaceRecipe.setIngredient('$', Material.LEATHER);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondMaceRecipe);
+	}
+	
+	public void netheriteMaceRecipe() {
+		ItemStack netheriteMace = ((Weapon2) Main.weaponsMasterList2.get(72)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "73");
+		ShapedRecipe netheriteMaceRecipe = new ShapedRecipe(key, netheriteMace);
+		netheriteMaceRecipe.shape(new String[] { "  @", " % ", "$  " });
+		netheriteMaceRecipe.setIngredient('@', Material.NETHERITE_INGOT);
+		netheriteMaceRecipe.setIngredient('%', Material.STICK);
+		netheriteMaceRecipe.setIngredient('$', Material.RABBIT_HIDE);
+		Main.getInstance().getServer().addRecipe((Recipe) netheriteMaceRecipe);
+	}
+	
 }
