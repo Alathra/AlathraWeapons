@@ -40,10 +40,10 @@ public class Main extends JavaPlugin {
     weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Warhammer", 432));
     weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Shortsword", 136));
     weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Quarterstaff", 137));
-    weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Hatchet", 432));
-    weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Battleaxe", 433));
-    weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Combat Axe", 434));
-    weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Halberd", 435));
+    weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Hatchet", 433));
+    weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Battleaxe", 434));
+    weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Combat Axe", 435));
+    weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Halberd", 436));
     weaponsMasterList2.add(new Weapon2("iron", "sword", "Iron Kunai", 38));
     weaponsMasterList2.add(new Weapon2("iron", "sword", "Iron Sabre", 39));
     weaponsMasterList2.add(new Weapon2("iron", "sword", "Iron Twin Blade", 40));
@@ -51,14 +51,37 @@ public class Main extends JavaPlugin {
     weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Sabre", 139));
     weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Twin Blade", 140));
     weaponsMasterList2.add(new Weapon2("iron", "axe", "Iron Battle Hoe", 236));
-    weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Battle Hoe", 436));
-    weaponsMasterList2.add(new Weapon2("netherite", "axe", "Obsidian Obliterator", 437));
+    weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Battle Hoe", 437));
+    weaponsMasterList2.add(new Weapon2("netherite", "axe", "Obsidian Obliterator", 438));
     weaponsMasterList2.add(new Weapon2("iron", "sword", "Iron Scimitar", 41));
     weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Scimitar", 141));
     weaponsMasterList2.add(new Weapon2("iron", "sword", "Iron Rapier", 42));
     weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Rapier", 142));
-    weaponsMasterList2.add(new Weapon2("iron", "axe", "Iron Scythe", 238));
-    weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Scythe", 438));
+    weaponsMasterList2.add(new Weapon2("iron", "axe", "Iron Scythe", 239));
+    weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Scythe", 439));
+    weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Katana", 330));
+    weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Spear", 331));
+    weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Naginata", 332));
+    weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Pike", 333));
+    weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Dagger", 334));
+    weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Zweihander", 335));
+    weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Shortsword", 336));
+    weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Quarterstaff", 337));
+    weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Kunai", 338));
+    weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Sabre", 339));
+    weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Twin Blade", 340));
+    weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Scimitar", 341));
+    weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Rapier", 342));
+    weaponsMasterList2.add(new Weapon2("diamond", "axe", "Diamond Flanged Mace", 530));
+    weaponsMasterList2.add(new Weapon2("diamond", "axe", "Diamond Morning Star", 531));
+    weaponsMasterList2.add(new Weapon2("diamond", "axe", "Diamond Warhammer", 532));
+    weaponsMasterList2.add(new Weapon2("diamond", "axe", "Diamond Hatchet", 533));
+    weaponsMasterList2.add(new Weapon2("diamond", "axe", "Diamond Battleaxe", 534));
+    weaponsMasterList2.add(new Weapon2("diamond", "axe", "Diamond Combat Axe", 535));
+    weaponsMasterList2.add(new Weapon2("diamond", "axe", "Diamond Halberd", 536));
+    weaponsMasterList2.add(new Weapon2("diamond", "axe", "Diamond Battle Hoe", 537));
+    weaponsMasterList2.add(new Weapon2("diamond", "axe", "Diamond Scythe", 539));
+    
   }
   
   public void onEnable() {
@@ -112,6 +135,28 @@ public class Main extends JavaPlugin {
     customRecipes.netheriteRapierRecipe();
     customRecipes.ironScytheRecipe();
     customRecipes.netheriteScytheRecipe();
+    customRecipes.diamondKatanaRecipe();
+    customRecipes.diamondSpearRecipe();
+    customRecipes.diamondNaginataRecipe();
+    customRecipes.diamondPikeRecipe();
+    customRecipes.diamondDaggerRecipe();
+    customRecipes.diamondZweihanderRecipe();
+    customRecipes.dimamondShortswordRecipe();
+    customRecipes.diamondQuarterStaffRecipe();
+    customRecipes.diamondKunaiRecipe();
+    customRecipes.diamondSabreRecipe();
+    customRecipes.diamondTwinBladeRecipe();
+    customRecipes.diamondScimitarRecipe();
+    customRecipes.diamondRapierRecipe();
+    customRecipes.diamondFlangedMaceRecipe();
+    customRecipes.diamondMorningStarRecipe();
+    customRecipes.diamondWarHammerRecipe();
+    customRecipes.diamondHatchetRecipe();
+    customRecipes.diamondBattleaxeRecipe();
+    customRecipes.diamondCombatAxeRecipe();
+    customRecipes.diamondHalberdRecipe();
+    customRecipes.diamondBattleHoeRecipe();
+    customRecipes.diamondScytheRecipe();
   }
   
   public void onDisable() {}

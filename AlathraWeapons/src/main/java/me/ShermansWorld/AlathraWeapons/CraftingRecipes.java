@@ -515,4 +515,250 @@ public class CraftingRecipes implements Listener {
 		Main.getInstance().getServer().addRecipe((Recipe) netheriteScytheRecipe);
 	}
 	
+	public void diamondKatanaRecipe() {
+		ItemStack diamondKatana = ((Weapon2) Main.weaponsMasterList2.get(45)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "46");
+		ShapedRecipe diamondKatanaRecipe = new ShapedRecipe(key, diamondKatana);
+		diamondKatanaRecipe.shape(new String[] { "  @", " @ ", "%  " });
+		diamondKatanaRecipe.setIngredient('@', Material.DIAMOND_BLOCK);
+		diamondKatanaRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondKatanaRecipe);
+	}
+	
+	public void diamondSpearRecipe() {
+		ItemStack diamondSpear = ((Weapon2) Main.weaponsMasterList2.get(46)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "47");
+		ShapedRecipe diamondSpearRecipe = new ShapedRecipe(key, diamondSpear);
+		diamondSpearRecipe.shape(new String[] { "  @", " % ", "%  " });
+		diamondSpearRecipe.setIngredient('@', Material.DIAMOND_SWORD);
+		diamondSpearRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondSpearRecipe);
+	}
+	
+	public void diamondNaginataRecipe() {
+		ItemStack diamondNaginata = ((Weapon2) Main.weaponsMasterList2.get(47)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "48");
+		ShapedRecipe diamondNaginataRecipe = new ShapedRecipe(key, diamondNaginata);
+		diamondNaginataRecipe.shape(new String[] { " @ ", " % ", "%  " });
+		diamondNaginataRecipe.setIngredient('@', Material.DIAMOND);
+		diamondNaginataRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondNaginataRecipe);
+	}
+	
+	public void diamondPikeRecipe() {
+		ItemStack diamondPike = ((Weapon2) Main.weaponsMasterList2.get(48)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "49");
+		ShapedRecipe diamondPikeRecipe = new ShapedRecipe(key, diamondPike);
+		diamondPikeRecipe.shape(new String[] { "  @", " % ", "%  " });
+		diamondPikeRecipe.setIngredient('@', Material.DIAMOND);
+		diamondPikeRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondPikeRecipe);
+	}
+	
+	public void diamondDaggerRecipe() {
+		ItemStack diamondDagger = ((Weapon2) Main.weaponsMasterList2.get(49)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "50");
+		ShapedRecipe diamondDaggerRecipe = new ShapedRecipe(key, diamondDagger);
+		diamondDaggerRecipe.shape(new String[] { "   ", " @ ", "%  " });
+		diamondDaggerRecipe.setIngredient('@', Material.DIAMOND);
+		diamondDaggerRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondDaggerRecipe);
+	}
+	
+	public void diamondZweihanderRecipe() {
+		ItemStack diamondZweihander = ((Weapon2) Main.weaponsMasterList2.get(50)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "51");
+		ShapedRecipe diamondZweihanderRecipe = new ShapedRecipe(key, diamondZweihander);
+		diamondZweihanderRecipe.shape(new String[] { "  %", " % ", "@  " });
+		diamondZweihanderRecipe.setIngredient('@', Material.DIAMOND_SWORD);
+		diamondZweihanderRecipe.setIngredient('%', Material.DIAMOND);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondZweihanderRecipe);
+	}
+	
+	public void dimamondShortswordRecipe() {
+		ItemStack diamondShortsword = ((Weapon2) Main.weaponsMasterList2.get(51)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "52");
+		ShapedRecipe dimamondShortswordRecipe = new ShapedRecipe(key, diamondShortsword);
+		dimamondShortswordRecipe.shape(new String[] { "  @", " @ ", "%  " });
+		dimamondShortswordRecipe.setIngredient('@', Material.DIAMOND);
+		dimamondShortswordRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) dimamondShortswordRecipe);
+	}
+	
+	public void diamondQuarterStaffRecipe() {
+		ItemStack dimaondQuarterstaff = ((Weapon2) Main.weaponsMasterList2.get(52)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "53");
+		ShapedRecipe diamondQuarterStaffRecipe = new ShapedRecipe(key, dimaondQuarterstaff);
+		diamondQuarterStaffRecipe.shape(new String[] { "  @", " % ", "@  " });
+		diamondQuarterStaffRecipe.setIngredient('@', Material.DIAMOND);
+		diamondQuarterStaffRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondQuarterStaffRecipe);
+	}
+	
+	public void diamondKunaiRecipe() {
+		ItemStack diamondKunai = ((Weapon2) Main.weaponsMasterList2.get(53)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "54");
+		ShapedRecipe diamondKunaiRecipe = new ShapedRecipe(key, diamondKunai);
+		diamondKunaiRecipe.shape(new String[] { "   ", " @ ", "  %" });
+		diamondKunaiRecipe.setIngredient('@', Material.DIAMOND);
+		diamondKunaiRecipe.setIngredient('%', Material.TRIPWIRE_HOOK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondKunaiRecipe);
+	}
+	
+	public void diamondSabreRecipe() {
+		ItemStack diamondSabre = ((Weapon2) Main.weaponsMasterList2.get(54)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "55");
+		ShapedRecipe diamondSabreRecipe = new ShapedRecipe(key, diamondSabre);
+		diamondSabreRecipe.shape(new String[] { "  @", " @ ", "$% " });
+		diamondSabreRecipe.setIngredient('@', Material.DIAMOND);
+		diamondSabreRecipe.setIngredient('%', Material.STICK);
+		diamondSabreRecipe.setIngredient('$', Material.LAPIS_LAZULI);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondSabreRecipe);
+	}
+	
+	public void diamondTwinBladeRecipe() {
+		ItemStack diamondTwinBlade = ((Weapon2) Main.weaponsMasterList2.get(55)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "56");
+		ShapedRecipe diamondTwinBladeRecipe = new ShapedRecipe(key, diamondTwinBlade);
+		diamondTwinBladeRecipe.shape(new String[] { " $@", "$%$", "@$ " });
+		diamondTwinBladeRecipe.setIngredient('@', Material.DIAMOND);
+		diamondTwinBladeRecipe.setIngredient('%', Material.STICK);
+		diamondTwinBladeRecipe.setIngredient('$', Material.GOLD_INGOT);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondTwinBladeRecipe);
+	}
+	
+	public void diamondScimitarRecipe() {
+		ItemStack diamondScimitar = ((Weapon2) Main.weaponsMasterList2.get(56)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "57");
+		ShapedRecipe diamondScimitarRecipe = new ShapedRecipe(key, diamondScimitar);
+		diamondScimitarRecipe.shape(new String[] { "  @", "%@@", "$% " });
+		diamondScimitarRecipe.setIngredient('@', Material.DIAMOND);
+		diamondScimitarRecipe.setIngredient('%', Material.GOLD_INGOT);
+		diamondScimitarRecipe.setIngredient('$', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondScimitarRecipe);
+	}
+	
+	public void diamondRapierRecipe() {
+		ItemStack diamondRapier = ((Weapon2) Main.weaponsMasterList2.get(57)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "58");
+		ShapedRecipe diamondRapierRecipe = new ShapedRecipe(key, diamondRapier);
+		diamondRapierRecipe.shape(new String[] { "  @", " @ ", "%  " });
+		diamondRapierRecipe.setIngredient('@', Material.DIAMOND);
+		diamondRapierRecipe.setIngredient('%', Material.LIGHTNING_ROD);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondRapierRecipe);
+	}
+	
+	public void diamondFlangedMaceRecipe() {
+		ItemStack diamondFlangedMace = ((Weapon2) Main.weaponsMasterList2.get(58)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "59");
+		ShapedRecipe diamondFlangedMaceRecipe = new ShapedRecipe(key, diamondFlangedMace);
+		diamondFlangedMaceRecipe.shape(new String[] { "   ", "@  ", "%  " });
+		diamondFlangedMaceRecipe.setIngredient('@', Material.DIAMOND);
+		diamondFlangedMaceRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondFlangedMaceRecipe);
+	}
+	
+	public void diamondMorningStarRecipe() {
+		ItemStack diamondMorningStar = ((Weapon2) Main.weaponsMasterList2.get(59)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "60");
+		ShapedRecipe diamondMorningStarRecipe = new ShapedRecipe(key, diamondMorningStar);
+		diamondMorningStarRecipe.shape(new String[] { " $ ", "$@$", "%$ " });
+		diamondMorningStarRecipe.setIngredient('@', Material.DIAMOND);
+		diamondMorningStarRecipe.setIngredient('%', Material.STICK);
+		diamondMorningStarRecipe.setIngredient('$', Material.AMETHYST_SHARD);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondMorningStarRecipe);
+	}
+	
+	public void diamondWarHammerRecipe() {
+		ItemStack diamondWarHammer = ((Weapon2) Main.weaponsMasterList2.get(60)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "61");
+		ShapedRecipe diamondWarHammerRecipe = new ShapedRecipe(key, diamondWarHammer);
+		diamondWarHammerRecipe.shape(new String[] { " @ ", " %@", "%  " });
+		diamondWarHammerRecipe.setIngredient('@', Material.DIAMOND);
+		diamondWarHammerRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondWarHammerRecipe);
+	}
+	
+	public void diamondHatchetRecipe() {
+		ItemStack diamondHatchet = ((Weapon2) Main.weaponsMasterList2.get(61)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "62");
+		ShapedRecipe diamondHatchetRecipe = new ShapedRecipe(key, diamondHatchet);
+		diamondHatchetRecipe.shape(new String[] { "   ", " @@", " @%" });
+		diamondHatchetRecipe.setIngredient('@', Material.DIAMOND);
+		diamondHatchetRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondHatchetRecipe);
+	}
+	
+	public void diamondBattleaxeRecipe() {
+		ItemStack diamondBattleaxe = ((Weapon2) Main.weaponsMasterList2.get(62)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "63");
+		ShapedRecipe diamondBattleaxeRecipe = new ShapedRecipe(key, diamondBattleaxe);
+		diamondBattleaxeRecipe.shape(new String[] { " @ ", " %@", "%  " });
+		diamondBattleaxeRecipe.setIngredient('@', Material.DIAMOND_AXE);
+		diamondBattleaxeRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondBattleaxeRecipe);
+	}
+	
+	public void diamondCombatAxeRecipe() {
+		ItemStack diamondCombatAxe = ((Weapon2) Main.weaponsMasterList2.get(63)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "64");
+		ShapedRecipe diamondCombatAxeRecipe = new ShapedRecipe(key, diamondCombatAxe);
+		diamondCombatAxeRecipe.shape(new String[] { "   ", "@  ", "%  " });
+		diamondCombatAxeRecipe.setIngredient('@', Material.DIAMOND);
+		diamondCombatAxeRecipe.setIngredient('%', Material.DIAMOND_AXE);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondCombatAxeRecipe);
+	}
+	
+	public void diamondHalberdRecipe() {
+		ItemStack diamondHalberd = ((Weapon2) Main.weaponsMasterList2.get(64)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "65");
+		ShapedRecipe diamondHalberdRecipe = new ShapedRecipe(key, diamondHalberd);
+		diamondHalberdRecipe.shape(new String[] { "  @", " % ", "%  " });
+		diamondHalberdRecipe.setIngredient('@', Material.DIAMOND_AXE);
+		diamondHalberdRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondHalberdRecipe);
+	}
+	
+	public void diamondBattleHoeRecipe() {
+		ItemStack diamondBattleHoe = ((Weapon2) Main.weaponsMasterList2.get(65)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "66");
+		ShapedRecipe diamondBattleHoeRecipe = new ShapedRecipe(key, diamondBattleHoe);
+		diamondBattleHoeRecipe.shape(new String[] { "@@@", "@% ", " % " });
+		diamondBattleHoeRecipe.setIngredient('@', Material.DIAMOND);
+		diamondBattleHoeRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondBattleHoeRecipe);
+	}
+	
+	public void diamondScytheRecipe() {
+		ItemStack diamondScythe = ((Weapon2) Main.weaponsMasterList2.get(66)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "67");
+		ShapedRecipe diamondScytheRecipe = new ShapedRecipe(key, diamondScythe);
+		diamondScytheRecipe.shape(new String[] { "@@%", " @ ", "@  " });
+		diamondScytheRecipe.setIngredient('@', Material.DIAMOND);
+		diamondScytheRecipe.setIngredient('%', Material.GOLD_NUGGET);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondScytheRecipe);
+	}
+	
 }
