@@ -25,10 +25,10 @@ public class Main extends JavaPlugin {
     weaponsMasterList2.add(new Weapon2("iron", "axe", "Iron Warhammer", 232));
     weaponsMasterList2.add(new Weapon2("iron", "sword", "Iron Shortsword", 36));
     weaponsMasterList2.add(new Weapon2("iron", "sword", "Iron Quarterstaff", 37));
-    weaponsMasterList2.add(new Weapon2("iron", "axe", "Iron Hatchet", 232));
-    weaponsMasterList2.add(new Weapon2("iron", "axe", "Iron Battleaxe", 233));
-    weaponsMasterList2.add(new Weapon2("iron", "axe", "Iron Combat Axe", 234));
-    weaponsMasterList2.add(new Weapon2("iron", "axe", "Iron Halberd", 235));
+    weaponsMasterList2.add(new Weapon2("iron", "axe", "Iron Hatchet", 233));
+    weaponsMasterList2.add(new Weapon2("iron", "axe", "Iron Battleaxe", 234));
+    weaponsMasterList2.add(new Weapon2("iron", "axe", "Iron Combat Axe", 235));
+    weaponsMasterList2.add(new Weapon2("iron", "axe", "Iron Halberd", 236));
     weaponsMasterList2.add(new Weapon2("netherite", "sword", "Legendary Katana", 130));
     weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Spear", 131));
     weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Flanged Mace", 430));
@@ -50,7 +50,7 @@ public class Main extends JavaPlugin {
     weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Kunai", 138));
     weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Sabre", 139));
     weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Twin Blade", 140));
-    weaponsMasterList2.add(new Weapon2("iron", "axe", "Iron Battle Hoe", 236));
+    weaponsMasterList2.add(new Weapon2("iron", "axe", "Iron Battle Hoe", 237));
     weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Battle Hoe", 437));
     weaponsMasterList2.add(new Weapon2("netherite", "axe", "Obsidian Obliterator", 438));
     weaponsMasterList2.add(new Weapon2("iron", "sword", "Iron Scimitar", 41));
