@@ -82,6 +82,9 @@ public class WeaponsTabCompletion implements TabCompleter {
 			completions.add("Iron_Mace");
 			completions.add("Diamond_Mace");
 			completions.add("Netherite_Mace");
+			completions.add("Iron_Greatsword");
+			completions.add("Diamond_Greatsword");
+			completions.add("Netherite_Greatsword");
 			return completions;
 		}
 		return Collections.emptyList();

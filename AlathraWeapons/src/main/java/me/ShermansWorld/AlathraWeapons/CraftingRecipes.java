@@ -832,4 +832,40 @@ public class CraftingRecipes implements Listener {
 		Main.getInstance().getServer().addRecipe((Recipe) netheriteMaceRecipe);
 	}
 	
+	public void ironGreatswordRecipe() {
+		ItemStack ironGreatsword = ((Weapon2) Main.weaponsMasterList2.get(73)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "74");
+		ShapedRecipe ironGreatswordRecipe = new ShapedRecipe(key, ironGreatsword);
+		ironGreatswordRecipe.shape(new String[] { " @ ", "%@%", " $ " });
+		ironGreatswordRecipe.setIngredient('@', Material.IRON_INGOT);
+		ironGreatswordRecipe.setIngredient('%', Material.STICK);
+		ironGreatswordRecipe.setIngredient('$', Material.OAK_LOG);
+		Main.getInstance().getServer().addRecipe((Recipe) ironGreatswordRecipe);
+	}
+	
+	public void diamondGreatswordRecipe() {
+		ItemStack diamondGreatsword = ((Weapon2) Main.weaponsMasterList2.get(74)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "75");
+		ShapedRecipe diamondGreatswordRecipe = new ShapedRecipe(key, diamondGreatsword);
+		diamondGreatswordRecipe.shape(new String[] { " @ ", "%@%", " $ " });
+		diamondGreatswordRecipe.setIngredient('@', Material.DIAMOND);
+		diamondGreatswordRecipe.setIngredient('%', Material.STICK);
+		diamondGreatswordRecipe.setIngredient('$', Material.OAK_LOG);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondGreatswordRecipe);
+	}
+	
+	public void netheriteGreatswordRecipe() {
+		ItemStack netheriteGreatsword = ((Weapon2) Main.weaponsMasterList2.get(75)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "76");
+		ShapedRecipe netheriteGreatswordRecipe = new ShapedRecipe(key, netheriteGreatsword);
+		netheriteGreatswordRecipe.shape(new String[] { " @ ", "%@%", " $ " });
+		netheriteGreatswordRecipe.setIngredient('@', Material.NETHERITE_INGOT);
+		netheriteGreatswordRecipe.setIngredient('%', Material.STICK);
+		netheriteGreatswordRecipe.setIngredient('$', Material.OAK_LOG);
+		Main.getInstance().getServer().addRecipe((Recipe) netheriteGreatswordRecipe);
+	}
+	
 }
