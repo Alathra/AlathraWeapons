@@ -868,4 +868,38 @@ public class CraftingRecipes implements Listener {
 		Main.getInstance().getServer().addRecipe((Recipe) netheriteGreatswordRecipe);
 	}
 	
+	public void ironBidentRecipe() {
+		ItemStack ironBident = ((Weapon2) Main.weaponsMasterList2.get(76)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "77");
+		ShapedRecipe ironBidentRecipe = new ShapedRecipe(key, ironBident);
+		ironBidentRecipe.shape(new String[] { "@ @", " @ ", " % " });
+		ironBidentRecipe.setIngredient('@', Material.IRON_INGOT);
+		ironBidentRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) ironBidentRecipe);
+	}
+	
+	public void diamondBidentRecipe() {
+		ItemStack diamondBident = ((Weapon2) Main.weaponsMasterList2.get(77)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "78");
+		ShapedRecipe diamondBidentRecipe = new ShapedRecipe(key, diamondBident);
+		diamondBidentRecipe.shape(new String[] { "@ @", " @ ", " % " });
+		diamondBidentRecipe.setIngredient('@', Material.DIAMOND);
+		diamondBidentRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondBidentRecipe);
+	}
+	
+	public void netheriteBidentRecipe() {
+		ItemStack netheriteBident = ((Weapon2) Main.weaponsMasterList2.get(78)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "79");
+		ShapedRecipe netheriteBidentRecipe = new ShapedRecipe(key, netheriteBident);
+		netheriteBidentRecipe.shape(new String[] { "@ @", " @ ", " % " });
+		netheriteBidentRecipe.setIngredient('@', Material.NETHERITE_INGOT);
+		netheriteBidentRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) netheriteBidentRecipe);
+	}
+	
+	
 }

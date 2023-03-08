@@ -90,6 +90,10 @@ public class Main extends JavaPlugin {
     weaponsMasterList2.add(new Weapon2("iron", "sword", "Iron Greatsword", 45));
     weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Greatsword", 345));
     weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Greatsword", 145));
+    weaponsMasterList2.add(new Weapon2("iron", "sword", "Iron Bident", 46));
+    weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Bident", 346));
+    weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Bident", 146));
+    
     
     
   }
@@ -176,6 +180,9 @@ public class Main extends JavaPlugin {
     customRecipes.ironGreatswordRecipe();
     customRecipes.diamondGreatswordRecipe();
     customRecipes.netheriteGreatswordRecipe();
+    customRecipes.ironBidentRecipe();
+    customRecipes.diamondBidentRecipe();
+    customRecipes.netheriteBidentRecipe();
   }
   
   public void onDisable() {}
