@@ -47,7 +47,6 @@ public class WeaponsTabCompletion implements TabCompleter {
 			completions.add("Netherite_Battleaxe");
 			completions.add("Netherite_Hatchet");
 			completions.add("Netherite_Battle_Hoe");
-			completions.add("Obsidian_Obliterator");
 			completions.add("Iron_Scimitar");
 			completions.add("Netherite_Scimitar");
 			completions.add("Iron_Rapier");
@@ -88,6 +87,7 @@ public class WeaponsTabCompletion implements TabCompleter {
 			completions.add("Iron_Bident");
 			completions.add("Diamond_Bident");
 			completions.add("Netherite_Bident");
+			completions.add("Diamond_Giant_Sword");
 			return completions;
 		}
 		return Collections.emptyList();

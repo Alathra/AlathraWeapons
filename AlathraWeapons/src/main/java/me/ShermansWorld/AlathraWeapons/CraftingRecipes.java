@@ -432,18 +432,6 @@ public class CraftingRecipes implements Listener {
 		netheriteBattleHoeRecipe.setIngredient('%', Material.STICK);
 		Main.getInstance().getServer().addRecipe((Recipe) netheriteBattleHoeRecipe);
 	}
-
-	public void obsidianObliteratorRecipe() {
-		ItemStack obsidianObliterator = ((Weapon2) Main.weaponsMasterList2.get(38)).getItem();
-		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
-				String.valueOf(Main.getInstance().getDescription().getName()) + "39");
-		ShapedRecipe obsidianObliteratorRecipe = new ShapedRecipe(key, obsidianObliterator);
-		obsidianObliteratorRecipe.shape(new String[] { " $%", "$@$", "%$ " });
-		obsidianObliteratorRecipe.setIngredient('@', Material.NETHERITE_INGOT);
-		obsidianObliteratorRecipe.setIngredient('%', Material.OBSIDIAN);
-		obsidianObliteratorRecipe.setIngredient('$', Material.GLOWSTONE_DUST);
-		Main.getInstance().getServer().addRecipe((Recipe) obsidianObliteratorRecipe);
-	}
 	
 	public void ironScimitarRecipe() {
 		ItemStack ironScimitar = ((Weapon2) Main.weaponsMasterList2.get(39)).getItem();
@@ -901,5 +889,16 @@ public class CraftingRecipes implements Listener {
 		Main.getInstance().getServer().addRecipe((Recipe) netheriteBidentRecipe);
 	}
 	
+	public void diamondGiantSwordRecipe() {
+		ItemStack diamondGiantSword = ((Weapon2) Main.weaponsMasterList2.get(79)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "80");
+		ShapedRecipe diamondGiantSwordRecipe = new ShapedRecipe(key, diamondGiantSword);
+		diamondGiantSwordRecipe.shape(new String[] { " @@", "%@@", "$% " });
+		diamondGiantSwordRecipe.setIngredient('@', Material.DIAMOND);
+		diamondGiantSwordRecipe.setIngredient('%', Material.GOLD_INGOT);
+		diamondGiantSwordRecipe.setIngredient('$', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondGiantSwordRecipe);
+	}
 	
 }
