@@ -434,7 +434,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void ironScimitarRecipe() {
-		ItemStack ironScimitar = ((Weapon2) Main.weaponsMasterList2.get(39)).getItem();
+		ItemStack ironScimitar = ((Weapon2) Main.weaponsMasterList2.get(38)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "40");
 		ShapedRecipe ironScimitarRecipe = new ShapedRecipe(key, ironScimitar);
@@ -446,7 +446,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void netheriteScimitarRecipe() {
-		ItemStack netheriteScimitar = ((Weapon2) Main.weaponsMasterList2.get(40)).getItem();
+		ItemStack netheriteScimitar = ((Weapon2) Main.weaponsMasterList2.get(39)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "41");
 		ShapedRecipe netheriteScimitarRecipe = new ShapedRecipe(key, netheriteScimitar);
@@ -458,7 +458,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void ironRapierRecipe() {
-		ItemStack ironRapier = ((Weapon2) Main.weaponsMasterList2.get(41)).getItem();
+		ItemStack ironRapier = ((Weapon2) Main.weaponsMasterList2.get(40)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "42");
 		ShapedRecipe ironRapierRecipe = new ShapedRecipe(key, ironRapier);
@@ -469,7 +469,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void netheriteRapierRecipe() {
-		ItemStack netheriteRapier = ((Weapon2) Main.weaponsMasterList2.get(42)).getItem();
+		ItemStack netheriteRapier = ((Weapon2) Main.weaponsMasterList2.get(41)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "43");
 		ShapedRecipe netheriteRapierRecipe = new ShapedRecipe(key, netheriteRapier);
@@ -480,7 +480,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void ironScytheRecipe() {
-		ItemStack ironScythe = ((Weapon2) Main.weaponsMasterList2.get(43)).getItem();
+		ItemStack ironScythe = ((Weapon2) Main.weaponsMasterList2.get(42)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "44");
 		ShapedRecipe ironScytheRecipe = new ShapedRecipe(key, ironScythe);
@@ -492,7 +492,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void netheriteScytheRecipe() {
-		ItemStack netheriteScythe = ((Weapon2) Main.weaponsMasterList2.get(44)).getItem();
+		ItemStack netheriteScythe = ((Weapon2) Main.weaponsMasterList2.get(43)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "45");
 		ShapedRecipe netheriteScytheRecipe = new ShapedRecipe(key, netheriteScythe);
@@ -504,7 +504,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondKatanaRecipe() {
-		ItemStack diamondKatana = ((Weapon2) Main.weaponsMasterList2.get(45)).getItem();
+		ItemStack diamondKatana = ((Weapon2) Main.weaponsMasterList2.get(44)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "46");
 		ShapedRecipe diamondKatanaRecipe = new ShapedRecipe(key, diamondKatana);
@@ -515,7 +515,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondSpearRecipe() {
-		ItemStack diamondSpear = ((Weapon2) Main.weaponsMasterList2.get(46)).getItem();
+		ItemStack diamondSpear = ((Weapon2) Main.weaponsMasterList2.get(45)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "47");
 		ShapedRecipe diamondSpearRecipe = new ShapedRecipe(key, diamondSpear);
@@ -526,7 +526,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondNaginataRecipe() {
-		ItemStack diamondNaginata = ((Weapon2) Main.weaponsMasterList2.get(47)).getItem();
+		ItemStack diamondNaginata = ((Weapon2) Main.weaponsMasterList2.get(46)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "48");
 		ShapedRecipe diamondNaginataRecipe = new ShapedRecipe(key, diamondNaginata);
@@ -537,7 +537,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondPikeRecipe() {
-		ItemStack diamondPike = ((Weapon2) Main.weaponsMasterList2.get(48)).getItem();
+		ItemStack diamondPike = ((Weapon2) Main.weaponsMasterList2.get(47)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "49");
 		ShapedRecipe diamondPikeRecipe = new ShapedRecipe(key, diamondPike);
@@ -548,7 +548,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondDaggerRecipe() {
-		ItemStack diamondDagger = ((Weapon2) Main.weaponsMasterList2.get(49)).getItem();
+		ItemStack diamondDagger = ((Weapon2) Main.weaponsMasterList2.get(48)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "50");
 		ShapedRecipe diamondDaggerRecipe = new ShapedRecipe(key, diamondDagger);
@@ -559,7 +559,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondZweihanderRecipe() {
-		ItemStack diamondZweihander = ((Weapon2) Main.weaponsMasterList2.get(50)).getItem();
+		ItemStack diamondZweihander = ((Weapon2) Main.weaponsMasterList2.get(49)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "51");
 		ShapedRecipe diamondZweihanderRecipe = new ShapedRecipe(key, diamondZweihander);
@@ -570,7 +570,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void dimamondShortswordRecipe() {
-		ItemStack diamondShortsword = ((Weapon2) Main.weaponsMasterList2.get(51)).getItem();
+		ItemStack diamondShortsword = ((Weapon2) Main.weaponsMasterList2.get(50)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "52");
 		ShapedRecipe dimamondShortswordRecipe = new ShapedRecipe(key, diamondShortsword);
@@ -581,7 +581,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondQuarterStaffRecipe() {
-		ItemStack dimaondQuarterstaff = ((Weapon2) Main.weaponsMasterList2.get(52)).getItem();
+		ItemStack dimaondQuarterstaff = ((Weapon2) Main.weaponsMasterList2.get(51)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "53");
 		ShapedRecipe diamondQuarterStaffRecipe = new ShapedRecipe(key, dimaondQuarterstaff);
@@ -592,7 +592,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondKunaiRecipe() {
-		ItemStack diamondKunai = ((Weapon2) Main.weaponsMasterList2.get(53)).getItem();
+		ItemStack diamondKunai = ((Weapon2) Main.weaponsMasterList2.get(52)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "54");
 		ShapedRecipe diamondKunaiRecipe = new ShapedRecipe(key, diamondKunai);
@@ -603,7 +603,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondSabreRecipe() {
-		ItemStack diamondSabre = ((Weapon2) Main.weaponsMasterList2.get(54)).getItem();
+		ItemStack diamondSabre = ((Weapon2) Main.weaponsMasterList2.get(53)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "55");
 		ShapedRecipe diamondSabreRecipe = new ShapedRecipe(key, diamondSabre);
@@ -615,7 +615,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondTwinBladeRecipe() {
-		ItemStack diamondTwinBlade = ((Weapon2) Main.weaponsMasterList2.get(55)).getItem();
+		ItemStack diamondTwinBlade = ((Weapon2) Main.weaponsMasterList2.get(54)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "56");
 		ShapedRecipe diamondTwinBladeRecipe = new ShapedRecipe(key, diamondTwinBlade);
@@ -627,7 +627,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondScimitarRecipe() {
-		ItemStack diamondScimitar = ((Weapon2) Main.weaponsMasterList2.get(56)).getItem();
+		ItemStack diamondScimitar = ((Weapon2) Main.weaponsMasterList2.get(55)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "57");
 		ShapedRecipe diamondScimitarRecipe = new ShapedRecipe(key, diamondScimitar);
@@ -639,7 +639,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondRapierRecipe() {
-		ItemStack diamondRapier = ((Weapon2) Main.weaponsMasterList2.get(57)).getItem();
+		ItemStack diamondRapier = ((Weapon2) Main.weaponsMasterList2.get(56)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "58");
 		ShapedRecipe diamondRapierRecipe = new ShapedRecipe(key, diamondRapier);
@@ -650,7 +650,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondFlangedMaceRecipe() {
-		ItemStack diamondFlangedMace = ((Weapon2) Main.weaponsMasterList2.get(58)).getItem();
+		ItemStack diamondFlangedMace = ((Weapon2) Main.weaponsMasterList2.get(57)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "59");
 		ShapedRecipe diamondFlangedMaceRecipe = new ShapedRecipe(key, diamondFlangedMace);
@@ -661,7 +661,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondMorningStarRecipe() {
-		ItemStack diamondMorningStar = ((Weapon2) Main.weaponsMasterList2.get(59)).getItem();
+		ItemStack diamondMorningStar = ((Weapon2) Main.weaponsMasterList2.get(58)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "60");
 		ShapedRecipe diamondMorningStarRecipe = new ShapedRecipe(key, diamondMorningStar);
@@ -673,7 +673,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondWarHammerRecipe() {
-		ItemStack diamondWarHammer = ((Weapon2) Main.weaponsMasterList2.get(60)).getItem();
+		ItemStack diamondWarHammer = ((Weapon2) Main.weaponsMasterList2.get(59)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "61");
 		ShapedRecipe diamondWarHammerRecipe = new ShapedRecipe(key, diamondWarHammer);
@@ -684,7 +684,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondHatchetRecipe() {
-		ItemStack diamondHatchet = ((Weapon2) Main.weaponsMasterList2.get(61)).getItem();
+		ItemStack diamondHatchet = ((Weapon2) Main.weaponsMasterList2.get(60)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "62");
 		ShapedRecipe diamondHatchetRecipe = new ShapedRecipe(key, diamondHatchet);
@@ -695,7 +695,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondBattleaxeRecipe() {
-		ItemStack diamondBattleaxe = ((Weapon2) Main.weaponsMasterList2.get(62)).getItem();
+		ItemStack diamondBattleaxe = ((Weapon2) Main.weaponsMasterList2.get(61)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "63");
 		ShapedRecipe diamondBattleaxeRecipe = new ShapedRecipe(key, diamondBattleaxe);
@@ -706,7 +706,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondCombatAxeRecipe() {
-		ItemStack diamondCombatAxe = ((Weapon2) Main.weaponsMasterList2.get(63)).getItem();
+		ItemStack diamondCombatAxe = ((Weapon2) Main.weaponsMasterList2.get(62)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "64");
 		ShapedRecipe diamondCombatAxeRecipe = new ShapedRecipe(key, diamondCombatAxe);
@@ -717,7 +717,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondHalberdRecipe() {
-		ItemStack diamondHalberd = ((Weapon2) Main.weaponsMasterList2.get(64)).getItem();
+		ItemStack diamondHalberd = ((Weapon2) Main.weaponsMasterList2.get(63)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "65");
 		ShapedRecipe diamondHalberdRecipe = new ShapedRecipe(key, diamondHalberd);
@@ -728,7 +728,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondBattleHoeRecipe() {
-		ItemStack diamondBattleHoe = ((Weapon2) Main.weaponsMasterList2.get(65)).getItem();
+		ItemStack diamondBattleHoe = ((Weapon2) Main.weaponsMasterList2.get(64)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "66");
 		ShapedRecipe diamondBattleHoeRecipe = new ShapedRecipe(key, diamondBattleHoe);
@@ -739,7 +739,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondScytheRecipe() {
-		ItemStack diamondScythe = ((Weapon2) Main.weaponsMasterList2.get(66)).getItem();
+		ItemStack diamondScythe = ((Weapon2) Main.weaponsMasterList2.get(65)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "67");
 		ShapedRecipe diamondScytheRecipe = new ShapedRecipe(key, diamondScythe);
@@ -750,7 +750,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void ironHookRecipe() {
-		ItemStack ironHook = ((Weapon2) Main.weaponsMasterList2.get(67)).getItem();
+		ItemStack ironHook = ((Weapon2) Main.weaponsMasterList2.get(66)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "68");
 		ShapedRecipe ironHookRecipe = new ShapedRecipe(key, ironHook);
@@ -762,7 +762,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondHookRecipe() {
-		ItemStack ironHook = ((Weapon2) Main.weaponsMasterList2.get(68)).getItem();
+		ItemStack ironHook = ((Weapon2) Main.weaponsMasterList2.get(67)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "69");
 		ShapedRecipe ironHookRecipe = new ShapedRecipe(key, ironHook);
@@ -773,7 +773,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void netheriteHookRecipe() {
-		ItemStack netheriteHook = ((Weapon2) Main.weaponsMasterList2.get(69)).getItem();
+		ItemStack netheriteHook = ((Weapon2) Main.weaponsMasterList2.get(68)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "70");
 		ShapedRecipe netheriteHookRecipe = new ShapedRecipe(key, netheriteHook);
@@ -785,7 +785,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void ironMaceRecipe() {
-		ItemStack ironMace = ((Weapon2) Main.weaponsMasterList2.get(70)).getItem();
+		ItemStack ironMace = ((Weapon2) Main.weaponsMasterList2.get(69)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "71");
 		ShapedRecipe ironMaceRecipe = new ShapedRecipe(key, ironMace);
@@ -797,7 +797,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondMaceRecipe() {
-		ItemStack diamondMace = ((Weapon2) Main.weaponsMasterList2.get(71)).getItem();
+		ItemStack diamondMace = ((Weapon2) Main.weaponsMasterList2.get(70)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "72");
 		ShapedRecipe diamondMaceRecipe = new ShapedRecipe(key, diamondMace);
@@ -809,7 +809,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void netheriteMaceRecipe() {
-		ItemStack netheriteMace = ((Weapon2) Main.weaponsMasterList2.get(72)).getItem();
+		ItemStack netheriteMace = ((Weapon2) Main.weaponsMasterList2.get(71)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "73");
 		ShapedRecipe netheriteMaceRecipe = new ShapedRecipe(key, netheriteMace);
@@ -821,7 +821,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void ironGreatswordRecipe() {
-		ItemStack ironGreatsword = ((Weapon2) Main.weaponsMasterList2.get(73)).getItem();
+		ItemStack ironGreatsword = ((Weapon2) Main.weaponsMasterList2.get(72)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "74");
 		ShapedRecipe ironGreatswordRecipe = new ShapedRecipe(key, ironGreatsword);
@@ -833,7 +833,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondGreatswordRecipe() {
-		ItemStack diamondGreatsword = ((Weapon2) Main.weaponsMasterList2.get(74)).getItem();
+		ItemStack diamondGreatsword = ((Weapon2) Main.weaponsMasterList2.get(73)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "75");
 		ShapedRecipe diamondGreatswordRecipe = new ShapedRecipe(key, diamondGreatsword);
@@ -845,7 +845,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void netheriteGreatswordRecipe() {
-		ItemStack netheriteGreatsword = ((Weapon2) Main.weaponsMasterList2.get(75)).getItem();
+		ItemStack netheriteGreatsword = ((Weapon2) Main.weaponsMasterList2.get(74)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "76");
 		ShapedRecipe netheriteGreatswordRecipe = new ShapedRecipe(key, netheriteGreatsword);
@@ -857,7 +857,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void ironBidentRecipe() {
-		ItemStack ironBident = ((Weapon2) Main.weaponsMasterList2.get(76)).getItem();
+		ItemStack ironBident = ((Weapon2) Main.weaponsMasterList2.get(75)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "77");
 		ShapedRecipe ironBidentRecipe = new ShapedRecipe(key, ironBident);
@@ -868,7 +868,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondBidentRecipe() {
-		ItemStack diamondBident = ((Weapon2) Main.weaponsMasterList2.get(77)).getItem();
+		ItemStack diamondBident = ((Weapon2) Main.weaponsMasterList2.get(76)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "78");
 		ShapedRecipe diamondBidentRecipe = new ShapedRecipe(key, diamondBident);
@@ -879,7 +879,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void netheriteBidentRecipe() {
-		ItemStack netheriteBident = ((Weapon2) Main.weaponsMasterList2.get(78)).getItem();
+		ItemStack netheriteBident = ((Weapon2) Main.weaponsMasterList2.get(77)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "79");
 		ShapedRecipe netheriteBidentRecipe = new ShapedRecipe(key, netheriteBident);
@@ -890,7 +890,7 @@ public class CraftingRecipes implements Listener {
 	}
 	
 	public void diamondGiantSwordRecipe() {
-		ItemStack diamondGiantSword = ((Weapon2) Main.weaponsMasterList2.get(79)).getItem();
+		ItemStack diamondGiantSword = ((Weapon2) Main.weaponsMasterList2.get(78)).getItem();
 		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
 				String.valueOf(Main.getInstance().getDescription().getName()) + "80");
 		ShapedRecipe diamondGiantSwordRecipe = new ShapedRecipe(key, diamondGiantSword);
