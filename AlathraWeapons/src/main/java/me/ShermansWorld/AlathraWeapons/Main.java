@@ -93,6 +93,10 @@ public class Main extends JavaPlugin {
 		weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Bident", 346));
 		weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Bident", 146));
 		weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Giant Sword", 329));
+		weaponsMasterList2.add(new Weapon2("iron", "axe", "Iron Dane Axe", 240));
+		weaponsMasterList2.add(new Weapon2("diamond", "axe", "Diamond Dane Axe", 540));
+		weaponsMasterList2.add(new Weapon2("netherite", "axe", "Netherite Dane Axe", 440));
+		
 
 	}
 
@@ -181,6 +185,9 @@ public class Main extends JavaPlugin {
 		customRecipes.diamondBidentRecipe();
 		customRecipes.netheriteBidentRecipe();
 		customRecipes.diamondGiantSwordRecipe();
+		customRecipes.ironDaneAxeRecipe();
+		customRecipes.diamondDaneAxeRecipe();
+		customRecipes.netheriteDaneAxeRecipe();
 	}
 
 	public void onDisable() {

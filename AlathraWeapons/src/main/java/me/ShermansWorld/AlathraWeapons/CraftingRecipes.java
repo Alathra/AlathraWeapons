@@ -901,4 +901,37 @@ public class CraftingRecipes implements Listener {
 		Main.getInstance().getServer().addRecipe((Recipe) diamondGiantSwordRecipe);
 	}
 	
+	public void ironDaneAxeRecipe() {
+		ItemStack ironDaneAxe = ((Weapon2) Main.weaponsMasterList2.get(79)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "81");
+		ShapedRecipe ironDaneAxeRecipe = new ShapedRecipe(key, ironDaneAxe);
+		ironDaneAxeRecipe.shape(new String[] { "   ", " @ ", "%  " });
+		ironDaneAxeRecipe.setIngredient('@', Material.IRON_AXE);
+		ironDaneAxeRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) ironDaneAxeRecipe);
+	}
+	
+	public void diamondDaneAxeRecipe() {
+		ItemStack diamondDaneAxe = ((Weapon2) Main.weaponsMasterList2.get(80)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "82");
+		ShapedRecipe diamondDaneAxeRecipe = new ShapedRecipe(key, diamondDaneAxe);
+		diamondDaneAxeRecipe.shape(new String[] { "   ", " @ ", "%  " });
+		diamondDaneAxeRecipe.setIngredient('@', Material.DIAMOND_AXE);
+		diamondDaneAxeRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondDaneAxeRecipe);
+	}
+	
+	public void netheriteDaneAxeRecipe() {
+		ItemStack netheriteDaneAxe = ((Weapon2) Main.weaponsMasterList2.get(81)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "83");
+		ShapedRecipe netheriteDaneAxeRecipe = new ShapedRecipe(key, netheriteDaneAxe);
+		netheriteDaneAxeRecipe.shape(new String[] { "   ", " @ ", "%  " });
+		netheriteDaneAxeRecipe.setIngredient('@', Material.NETHERITE_AXE);
+		netheriteDaneAxeRecipe.setIngredient('%', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) netheriteDaneAxeRecipe);
+	}
+	
 }

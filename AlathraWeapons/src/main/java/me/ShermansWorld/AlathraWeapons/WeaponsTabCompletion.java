@@ -88,6 +88,9 @@ public class WeaponsTabCompletion implements TabCompleter {
 			completions.add("Diamond_Bident");
 			completions.add("Netherite_Bident");
 			completions.add("Diamond_Giant_Sword");
+			completions.add("Iron_Dane_Axe");
+			completions.add("Diamond_Dane_Axe");
+			completions.add("Netherite_Dane_Axe");
 			return completions;
 		}
 		return Collections.emptyList();
