@@ -934,4 +934,49 @@ public class CraftingRecipes implements Listener {
 		Main.getInstance().getServer().addRecipe((Recipe) netheriteDaneAxeRecipe);
 	}
 	
+	public void ironAntlerStaffRecipe() {
+		ItemStack ironAntlerStaff = ((Weapon2) Main.weaponsMasterList2.get(82)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "84");
+		ShapedRecipe ironAntlerStaffRecipe = new ShapedRecipe(key, ironAntlerStaff);
+		ironAntlerStaffRecipe.shape(new String[] { "@%@", "$^&", "^$#" });
+		ironAntlerStaffRecipe.setIngredient('@', Material.IRON_INGOT);
+		ironAntlerStaffRecipe.setIngredient('%', Material.BONE_BLOCK);
+		ironAntlerStaffRecipe.setIngredient('$', Material.TWISTING_VINES);
+		ironAntlerStaffRecipe.setIngredient('^', Material.WARPED_STEM);
+		ironAntlerStaffRecipe.setIngredient('&', Material.IRON_NUGGET);
+		ironAntlerStaffRecipe.setIngredient('#', Material.STRING);
+		Main.getInstance().getServer().addRecipe((Recipe) ironAntlerStaffRecipe);
+	}
+	
+	public void diamondAntlerStaffRecipe() {
+		ItemStack diamondAntlerStaff = ((Weapon2) Main.weaponsMasterList2.get(83)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "85");
+		ShapedRecipe diamondAntlerStaffRecipe = new ShapedRecipe(key, diamondAntlerStaff);
+		diamondAntlerStaffRecipe.shape(new String[] { "@%@", "$^&", "^$#" });
+		diamondAntlerStaffRecipe.setIngredient('@', Material.DIAMOND);
+		diamondAntlerStaffRecipe.setIngredient('%', Material.BONE_BLOCK);
+		diamondAntlerStaffRecipe.setIngredient('$', Material.TWISTING_VINES);
+		diamondAntlerStaffRecipe.setIngredient('^', Material.WARPED_STEM);
+		diamondAntlerStaffRecipe.setIngredient('&', Material.COPPER_INGOT);
+		diamondAntlerStaffRecipe.setIngredient('#', Material.STRING);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondAntlerStaffRecipe);
+	}
+	
+	public void netheriteAntlerStaffRecipe() {
+		ItemStack netheriteAntlerStaff = ((Weapon2) Main.weaponsMasterList2.get(84)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "86");
+		ShapedRecipe netheriteAntlerStaffRecipe = new ShapedRecipe(key, netheriteAntlerStaff);
+		netheriteAntlerStaffRecipe.shape(new String[] { "@%@", "$^&", "^$#" });
+		netheriteAntlerStaffRecipe.setIngredient('@', Material.NETHERITE_INGOT);
+		netheriteAntlerStaffRecipe.setIngredient('%', Material.BONE_BLOCK);
+		netheriteAntlerStaffRecipe.setIngredient('$', Material.TWISTING_VINES);
+		netheriteAntlerStaffRecipe.setIngredient('^', Material.WARPED_STEM);
+		netheriteAntlerStaffRecipe.setIngredient('&', Material.GOLD_NUGGET);
+		netheriteAntlerStaffRecipe.setIngredient('#', Material.STRING);
+		Main.getInstance().getServer().addRecipe((Recipe) netheriteAntlerStaffRecipe);
+	}
+	
 }
