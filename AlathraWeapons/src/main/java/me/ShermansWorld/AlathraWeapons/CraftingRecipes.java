@@ -979,4 +979,17 @@ public class CraftingRecipes implements Listener {
 		Main.getInstance().getServer().addRecipe((Recipe) netheriteAntlerStaffRecipe);
 	}
 	
+	public void faeBowRecipe() {
+		ItemStack faeBow = ((Weapon2) Main.weaponsMasterList2.get(85)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "87");
+		ShapedRecipe faeBowRecipe = new ShapedRecipe(key, faeBow);
+		faeBowRecipe.shape(new String[] { " @$", "@%^", " @$" });
+		faeBowRecipe.setIngredient('@', Material.STRIPPED_MANGROVE_LOG);
+		faeBowRecipe.setIngredient('%', Material.CROSSBOW);
+		faeBowRecipe.setIngredient('$', Material.GOLD_NUGGET);
+		faeBowRecipe.setIngredient('^', Material.FLOWERING_AZALEA_LEAVES);
+		Main.getInstance().getServer().addRecipe((Recipe) faeBowRecipe);
+	}
+	
 }

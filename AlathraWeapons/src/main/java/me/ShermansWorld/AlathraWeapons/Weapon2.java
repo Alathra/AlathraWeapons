@@ -35,6 +35,9 @@ public class Weapon2 {
 			} else if (material.equalsIgnoreCase("diamond")) {
 				this.item = new ItemStack(Material.DIAMOND_AXE, 1);
 			}
+		if (type.equalsIgnoreCase("crossbow")) {
+			this.item = new ItemStack(Material.CROSSBOW, 1);
+		}
 		ItemMeta meta = this.item.getItemMeta();
 		meta.setDisplayName(name);
 		List<String> lore = new ArrayList<String>();
