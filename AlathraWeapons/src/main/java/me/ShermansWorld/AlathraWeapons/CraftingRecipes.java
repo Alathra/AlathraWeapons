@@ -992,4 +992,16 @@ public class CraftingRecipes implements Listener {
 		Main.getInstance().getServer().addRecipe((Recipe) faeBowRecipe);
 	}
 	
+	public void longbowRecipe() {
+		ItemStack longbow = ((Weapon2) Main.weaponsMasterList2.get(86)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "88");
+		ShapedRecipe longbowRecipe = new ShapedRecipe(key, longbow);
+		longbowRecipe.shape(new String[] { "@% ", "@ $", "@% " });
+		longbowRecipe.setIngredient('@', Material.STRING);
+		longbowRecipe.setIngredient('%', Material.TRIPWIRE_HOOK);
+		longbowRecipe.setIngredient('$', Material.MANGROVE_PLANKS);
+		Main.getInstance().getServer().addRecipe((Recipe) longbowRecipe);
+	}
+	
 }
