@@ -1004,4 +1004,46 @@ public class CraftingRecipes implements Listener {
 		Main.getInstance().getServer().addRecipe((Recipe) longbowRecipe);
 	}
 	
+	public void ironGladiusRecipe() {
+		ItemStack ironGladius = ((Weapon2) Main.weaponsMasterList2.get(87)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "89");
+		ShapedRecipe ironGladiusRecipe = new ShapedRecipe(key, ironGladius);
+		ironGladiusRecipe.shape(new String[] { " ^ ", "$^$", "@&%" });
+		ironGladiusRecipe.setIngredient('@', Material.STRING);
+		ironGladiusRecipe.setIngredient('%', Material.RED_DYE);
+		ironGladiusRecipe.setIngredient('$', Material.GOLD_INGOT);
+		ironGladiusRecipe.setIngredient('^', Material.IRON_INGOT);
+		ironGladiusRecipe.setIngredient('&', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) ironGladiusRecipe);
+	}
+	
+	public void diamondGladiusRecipe() {
+		ItemStack diamondGladius = ((Weapon2) Main.weaponsMasterList2.get(88)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "90");
+		ShapedRecipe diamondGladiusRecipe = new ShapedRecipe(key, diamondGladius);
+		diamondGladiusRecipe.shape(new String[] { " ^ ", "$^$", "@&%" });
+		diamondGladiusRecipe.setIngredient('@', Material.STRING);
+		diamondGladiusRecipe.setIngredient('%', Material.RED_DYE);
+		diamondGladiusRecipe.setIngredient('$', Material.GOLD_INGOT);
+		diamondGladiusRecipe.setIngredient('^', Material.DIAMOND);
+		diamondGladiusRecipe.setIngredient('&', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) diamondGladiusRecipe);
+	}
+	
+	public void netheriteGladiusRecipe() {
+		ItemStack netheriteGladius = ((Weapon2) Main.weaponsMasterList2.get(89)).getItem();
+		NamespacedKey key = new NamespacedKey((Plugin) Main.getInstance(),
+				String.valueOf(Main.getInstance().getDescription().getName()) + "91");
+		ShapedRecipe netheriteGladiusRecipe = new ShapedRecipe(key, netheriteGladius);
+		netheriteGladiusRecipe.shape(new String[] { " ^ ", "$^$", "@&%" });
+		netheriteGladiusRecipe.setIngredient('@', Material.STRING);
+		netheriteGladiusRecipe.setIngredient('%', Material.RED_DYE);
+		netheriteGladiusRecipe.setIngredient('$', Material.GOLD_INGOT);
+		netheriteGladiusRecipe.setIngredient('^', Material.NETHERITE_INGOT);
+		netheriteGladiusRecipe.setIngredient('&', Material.STICK);
+		Main.getInstance().getServer().addRecipe((Recipe) netheriteGladiusRecipe);
+	}
+	
 }

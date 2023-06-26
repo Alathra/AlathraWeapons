@@ -96,6 +96,9 @@ public class WeaponsTabCompletion implements TabCompleter {
 			completions.add("Netherite_Antler_Staff");
 			completions.add("Faebow");
 			completions.add("Longbow");
+			completions.add("Iron_Gladius");
+			completions.add("Diamond_Gladius");
+			completions.add("Netherite_Gladius");
 			return completions;
 		}
 		return Collections.emptyList();

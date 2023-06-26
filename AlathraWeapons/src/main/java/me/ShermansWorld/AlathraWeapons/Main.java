@@ -101,6 +101,9 @@ public class Main extends JavaPlugin {
 		weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Antler Staff", 129));
 		weaponsMasterList2.add(new Weapon2("null", "crossbow", "Faebow", 14914));
 		weaponsMasterList2.add(new Weapon2("null", "bow", "Longbow", 14915));
+		weaponsMasterList2.add(new Weapon2("iron", "sword", "Iron Gladius", 47));
+		weaponsMasterList2.add(new Weapon2("diamond", "sword", "Diamond Gladius", 347));
+		weaponsMasterList2.add(new Weapon2("netherite", "sword", "Netherite Gladius", 147));
 		
 
 	}
@@ -198,6 +201,9 @@ public class Main extends JavaPlugin {
 		customRecipes.netheriteAntlerStaffRecipe();
 		customRecipes.faeBowRecipe();
 		customRecipes.longbowRecipe();
+		customRecipes.ironGladiusRecipe();
+		customRecipes.diamondGladiusRecipe();
+		customRecipes.netheriteGladiusRecipe();
 	}
 
 	public void onDisable() {
