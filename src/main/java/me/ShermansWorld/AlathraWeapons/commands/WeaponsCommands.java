@@ -63,7 +63,7 @@ public class WeaponsCommands implements CommandExecutor {
                     return true;
                 }
             }
-            p.sendMessage(new ColorParser(Util.ChatPrefix() + "CustomWeapon not found!").build());
+            p.sendMessage(new ColorParser(Util.ChatPrefix() + "CustomWeapon not found!").parseLegacy().build());
             return false;
         }
         return true;
