@@ -771,5 +771,25 @@ public class CraftingRecipes {
             .setIngredient('&', Material.STICK)
             .build();
     }
+    
+    public void diamondBlackfeldSwordRecipe() {
+        new RecipeFactory("92", Main.weaponsMasterList.get(90).getItemStack(), RecipeShape.SHAPED)
+            .shape("   ", "@% ", "$^ ")
+            .setIngredient('@', Material.DIAMOND_SWORD)
+            .setIngredient('%', Material.GOLD_NUGGET)
+            .setIngredient('$', Material.RED_DYE)
+            .setIngredient('^', Material.GOLD_INGOT)
+            .build();
+    }
+    
+    public void netheriteBlackfeldSwordRecipe() {
+        new RecipeFactory("93", Main.weaponsMasterList.get(91).getItemStack(), RecipeShape.SHAPED)
+            .shape("   ", "@% ", "$^ ")
+            .setIngredient('@', Material.NETHERITE_SWORD)
+            .setIngredient('%', Material.GOLD_NUGGET)
+            .setIngredient('$', Material.RED_DYE)
+            .setIngredient('^', Material.GOLD_INGOT)
+            .build();
+    }
 
 }
