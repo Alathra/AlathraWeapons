@@ -791,5 +791,32 @@ public class CraftingRecipes {
             .setIngredient('^', Material.GOLD_INGOT)
             .build();
     }
+    
+    public void ironDreistklezeRecipe() {
+        new RecipeFactory("94", Main.weaponsMasterList.get(92).getItemStack(), RecipeShape.SHAPED)
+            .shape(" @ ", " @ ", "$%$")
+            .setIngredient('@', Material.IRON_INGOT)
+            .setIngredient('%', Material.OAK_PLANKS)
+            .setIngredient('$', Material.STICK)
+            .build();
+    }
+    
+    public void diamondDreistklezeRecipe() {
+        new RecipeFactory("95", Main.weaponsMasterList.get(93).getItemStack(), RecipeShape.SHAPED)
+            .shape(" @ ", " @ ", "$%$")
+            .setIngredient('@', Material.DIAMOND)
+            .setIngredient('%', Material.OAK_PLANKS)
+            .setIngredient('$', Material.STICK)
+            .build();
+    }
+    
+    public void netheriteDreistklezeRecipe() {
+        new RecipeFactory("96", Main.weaponsMasterList.get(94).getItemStack(), RecipeShape.SHAPED)
+            .shape(" @ ", " @ ", "$%$")
+            .setIngredient('@', Material.NETHERITE_INGOT)
+            .setIngredient('%', Material.OAK_PLANKS)
+            .setIngredient('$', Material.STICK)
+            .build();
+    }
 
 }

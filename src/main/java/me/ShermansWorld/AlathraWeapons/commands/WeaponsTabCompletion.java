@@ -102,6 +102,9 @@ public class WeaponsTabCompletion implements TabCompleter {
             completions.add("Netherite_Gladius");
             completions.add("Diamond_Blackfeld_Sword");
             completions.add("Netherite_Blackfeld_Sword");
+            completions.add("Iron_Dreistkleze");
+            completions.add("Diamond_Dreistkleze");
+            completions.add("Netherite_Dreistkleze");
             return completions;
         }
         return Collections.emptyList();
