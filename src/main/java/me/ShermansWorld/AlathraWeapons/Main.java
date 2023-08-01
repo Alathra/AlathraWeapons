@@ -115,7 +115,7 @@ public class Main extends JavaPlugin {
                 new CustomWeapon("Diamond Blackfeld Sword", 348, WeaponMaterial.DIAMOND, WeaponType.SWORD),
                 new CustomWeapon("Netherite Blackfeld Sword", 148, WeaponMaterial.NETHERITE, WeaponType.SWORD),
                 new CustomWeapon("Iron Dreistkleze", 48, WeaponMaterial.IRON, WeaponType.SWORD),
-                new CustomWeapon("Diamond Dreistkleze", 348, WeaponMaterial.DIAMOND, WeaponType.SWORD),
+                new CustomWeapon("Diamond Dreistkleze", 349, WeaponMaterial.DIAMOND, WeaponType.SWORD),
                 new CustomWeapon("Netherite Dreistkleze", 149, WeaponMaterial.NETHERITE, WeaponType.SWORD)
             );
         } catch (InvalidMaterialException e) {
