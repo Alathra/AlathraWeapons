@@ -116,7 +116,10 @@ public class Main extends JavaPlugin {
                 new CustomWeapon("Netherite Blackfeld Sword", 148, WeaponMaterial.NETHERITE, WeaponType.SWORD),
                 new CustomWeapon("Iron Dreistkleze", 48, WeaponMaterial.IRON, WeaponType.SWORD),
                 new CustomWeapon("Diamond Dreistkleze", 349, WeaponMaterial.DIAMOND, WeaponType.SWORD),
-                new CustomWeapon("Netherite Dreistkleze", 149, WeaponMaterial.NETHERITE, WeaponType.SWORD)
+                new CustomWeapon("Netherite Dreistkleze", 149, WeaponMaterial.NETHERITE, WeaponType.SWORD),
+                new CustomWeapon("Iron Longsword", 49, WeaponMaterial.IRON, WeaponType.SWORD),
+                new CustomWeapon("Diamond Longsword", 350, WeaponMaterial.DIAMOND, WeaponType.SWORD),
+                new CustomWeapon("Netherite Longsword", 150, WeaponMaterial.NETHERITE, WeaponType.SWORD)
             );
         } catch (InvalidMaterialException e) {
             getInstance().getLogger().warning(e.getMessage());
@@ -220,6 +223,9 @@ public class Main extends JavaPlugin {
         craftingRecipes.ironDreistklezeRecipe();
         craftingRecipes.diamondDreistklezeRecipe();
         craftingRecipes.netheriteDreistklezeRecipe();
+        craftingRecipes.ironLongsword();
+        craftingRecipes.diamondLongsword();
+        craftingRecipes.netheriteLongsword();
     }
 
     public void onEnable() {
