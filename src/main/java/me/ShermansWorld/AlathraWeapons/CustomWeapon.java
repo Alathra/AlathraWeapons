@@ -37,7 +37,7 @@ public class CustomWeapon {
             };
             case AXE -> switch (material) {
                 case IRON -> new ItemStack(Material.IRON_AXE, 1);
-                case GOLD -> new ItemStack(Material.GOLDEN_SWORD, 1);
+                case GOLD -> new ItemStack(Material.GOLDEN_AXE, 1);
                 case DIAMOND -> new ItemStack(Material.DIAMOND_AXE, 1);
                 case NETHERITE -> new ItemStack(Material.NETHERITE_AXE, 1);
                 case IGNORED -> {
