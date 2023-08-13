@@ -351,19 +351,17 @@ public class CraftingRecipes {
 
     public void ironScytheRecipe() {
         new RecipeFactory("44", Main.weaponsMasterList.get(42).getItemStack(), RecipeShape.SHAPED)
-                .shape("@@%", " $ ", "$  ")
+                .shape("@@%", " @ ", "@  ")
                 .setIngredient('@', Material.IRON_INGOT)
                 .setIngredient('%', Material.GOLD_NUGGET)
-                .setIngredient('$', Material.IRON_BARS)
                 .build();
     }
 
     public void netheriteScytheRecipe() {
         new RecipeFactory("45", Main.weaponsMasterList.get(43).getItemStack(), RecipeShape.SHAPED)
-                .shape("@@%", " $ ", "$  ")
+                .shape("@@%", " @ ", "@  ")
                 .setIngredient('@', Material.NETHERITE_INGOT)
                 .setIngredient('%', Material.GOLD_NUGGET)
-                .setIngredient('$', Material.NETHERITE_SCRAP)
                 .build();
     }
 
@@ -566,9 +564,8 @@ public class CraftingRecipes {
 
     public void netheriteHookRecipe() {
         new RecipeFactory("70", Main.weaponsMasterList.get(68).getItemStack(), RecipeShape.SHAPED)
-                .shape(" @@", " % ", " $ ")
-                .setIngredient('@', Material.NETHERITE_SCRAP)
-                .setIngredient('%', Material.NETHERITE_INGOT)
+                .shape(" @@", " @ ", " $ ")
+                .setIngredient('@', Material.NETHERITE_INGOT)
                 .setIngredient('$', Material.STICK)
                 .build();
     }
@@ -819,7 +816,7 @@ public class CraftingRecipes {
                 .build();
     }
 
-    public void ironLongsword() {
+    public void ironLongswordRecipe() {
         new RecipeFactory("97", Main.weaponsMasterList.get(95).getItemStack(), RecipeShape.SHAPED)
                 .shape("   ", " @ ", "$  ")
                 .setIngredient('@', Material.IRON_INGOT)
@@ -827,7 +824,7 @@ public class CraftingRecipes {
                 .build();
     }
 
-    public void diamondLongsword() {
+    public void diamondLongswordRecipe() {
         new RecipeFactory("98", Main.weaponsMasterList.get(96).getItemStack(), RecipeShape.SHAPED)
                 .shape("   ", " @ ", "$  ")
                 .setIngredient('@', Material.DIAMOND)
@@ -835,11 +832,309 @@ public class CraftingRecipes {
                 .build();
     }
 
-    public void netheriteLongsword() {
+    public void netheriteLongswordRecipe() {
         new RecipeFactory("99", Main.weaponsMasterList.get(97).getItemStack(), RecipeShape.SHAPED)
                 .shape("   ", " @ ", "$  ")
                 .setIngredient('@', Material.NETHERITE_INGOT)
                 .setIngredient('$', Material.NETHERITE_SWORD)
+                .build();
+    }
+
+    public void ironGiantSwordRecipe() {
+        new RecipeFactory("100", Main.weaponsMasterList.get(98).getItemStack(), RecipeShape.SHAPED)
+                .shape(" @@", "%@@", "$% ")
+                .setIngredient('@', Material.IRON_INGOT)
+                .setIngredient('%', Material.GOLD_INGOT)
+                .setIngredient('$', Material.STICK)
+                .build();
+    }
+
+    public void ironBlackfeldSwordRecipe() {
+        new RecipeFactory("101", Main.weaponsMasterList.get(99).getItemStack(), RecipeShape.SHAPED)
+                .shape("   ", "@% ", "$^ ")
+                .setIngredient('@', Material.IRON_SWORD)
+                .setIngredient('%', Material.GOLD_NUGGET)
+                .setIngredient('$', Material.RED_DYE)
+                .setIngredient('^', Material.GOLD_INGOT)
+                .build();
+    }
+
+    public void netheriteGiantSwordRecipe() {
+        new RecipeFactory("102", Main.weaponsMasterList.get(100).getItemStack(), RecipeShape.SHAPED)
+                .shape(" @@", "%@@", "$% ")
+                .setIngredient('@', Material.NETHERITE_INGOT)
+                .setIngredient('%', Material.GOLD_INGOT)
+                .setIngredient('$', Material.STICK)
+                .build();
+    }
+
+    public void goldenGiantSwordRecipe() {
+        new RecipeFactory("103", Main.weaponsMasterList.get(101).getItemStack(), RecipeShape.SHAPED)
+                .shape(" @@", "%@@", "$% ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.AMETHYST_SHARD)
+                .setIngredient('$', Material.STICK)
+                .build();
+    }
+
+    public void goldenKatanaRecipe() {
+        new RecipeFactory("104", Main.weaponsMasterList.get(102).getItemStack(), RecipeShape.SHAPED)
+                .shape("  @", " @ ", "%  ")
+                .setIngredient('@', Material.GOLD_BLOCK)
+                .setIngredient('%', Material.STICK)
+                .build();
+    }
+
+    public void goldenSpearRecipe() {
+        new RecipeFactory("105", Main.weaponsMasterList.get(103).getItemStack(), RecipeShape.SHAPED)
+                .shape("  @", " % ", "%  ")
+                .setIngredient('@', Material.GOLDEN_SWORD)
+                .setIngredient('%', Material.STICK)
+                .build();
+    }
+
+    public void goldenNaginataRecipe() {
+        new RecipeFactory("106", Main.weaponsMasterList.get(104).getItemStack(), RecipeShape.SHAPED)
+                .shape(" @ ", " % ", "%  ")
+                .setIngredient('@', Material.GOLDEN_SWORD)
+                .setIngredient('%', Material.STICK)
+                .build();
+    }
+
+    public void goldenPikeRecipe() {
+        new RecipeFactory("107", Main.weaponsMasterList.get(105).getItemStack(), RecipeShape.SHAPED)
+                .shape("  @", " % ", "%  ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.STICK)
+                .build();
+    }
+
+    public void goldenDaggerRecipe() {
+        new RecipeFactory("108", Main.weaponsMasterList.get(106).getItemStack(), RecipeShape.SHAPED)
+                .shape("   ", " @ ", "%  ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.STICK)
+                .build();
+    }
+
+    public void goldenZweihanderRecipe() {
+        new RecipeFactory("109", Main.weaponsMasterList.get(107).getItemStack(), RecipeShape.SHAPED)
+                .shape("  %", " % ", "@  ")
+                .setIngredient('@', Material.GOLDEN_SWORD)
+                .setIngredient('%', Material.GOLD_INGOT)
+                .build();
+    }
+
+    public void goldenShortswordRecipe() {
+        new RecipeFactory("110", Main.weaponsMasterList.get(108).getItemStack(), RecipeShape.SHAPED)
+                .shape("  @", " @ ", "%  ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.STICK)
+                .build();
+    }
+
+    public void goldenQuarterstaffRecipe() {
+        new RecipeFactory("111", Main.weaponsMasterList.get(109).getItemStack(), RecipeShape.SHAPED)
+                .shape("  @", " % ", "@  ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.STICK)
+                .build();
+    }
+
+    public void goldenKunaiRecipe() {
+        new RecipeFactory("112", Main.weaponsMasterList.get(110).getItemStack(), RecipeShape.SHAPED)
+                .shape("   ", " @ ", "  %")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.TRIPWIRE_HOOK)
+                .build();
+    }
+
+    public void goldenSabreRecipe() {
+        new RecipeFactory("113", Main.weaponsMasterList.get(111).getItemStack(), RecipeShape.SHAPED)
+                .shape("  @", " @ ", "$% ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.STICK)
+                .setIngredient('$', Material.LAPIS_LAZULI)
+                .build();
+    }
+
+    public void goldenTwinBladeRecipe() {
+        new RecipeFactory("114", Main.weaponsMasterList.get(112).getItemStack(), RecipeShape.SHAPED)
+                .shape(" $@", "$%$", "@$ ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.STICK)
+                .setIngredient('$', Material.AMETHYST_SHARD)
+                .build();
+    }
+
+    public void goldenScimitarRecipe() {
+        new RecipeFactory("115", Main.weaponsMasterList.get(113).getItemStack(), RecipeShape.SHAPED)
+                .shape("  @", "%@@", "$% ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.AMETHYST_SHARD)
+                .setIngredient('$', Material.STICK)
+                .build();
+    }
+
+    public void goldenRapierRecipe() {
+        new RecipeFactory("116", Main.weaponsMasterList.get(114).getItemStack(), RecipeShape.SHAPED)
+                .shape("  @", " @ ", "%  ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.LIGHTNING_ROD)
+                .build();
+    }
+
+    public void goldenHookRecipe() {
+        new RecipeFactory("117", Main.weaponsMasterList.get(115).getItemStack(), RecipeShape.SHAPED)
+                .shape(" @@", " % ", " $ ")
+                .setIngredient('@', Material.GOLD_NUGGET)
+                .setIngredient('%', Material.GOLD_INGOT)
+                .setIngredient('$', Material.STICK)
+                .build();
+    }
+
+    public void goldenMaceRecipe() {
+        new RecipeFactory("118", Main.weaponsMasterList.get(116).getItemStack(), RecipeShape.SHAPED)
+                .shape("  @", " % ", "$  ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.STICK)
+                .setIngredient('$', Material.LEATHER)
+                .build();
+    }
+
+    public void goldenGreatswordRecipe() {
+        new RecipeFactory("119", Main.weaponsMasterList.get(117).getItemStack(), RecipeShape.SHAPED)
+                .shape(" @ ", "%@%", " $ ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.STICK)
+                .setIngredient('$', Material.OAK_LOG)
+                .build();
+    }
+
+    public void goldenBidentRecipe() {
+        new RecipeFactory("120", Main.weaponsMasterList.get(118).getItemStack(), RecipeShape.SHAPED)
+                .shape("@ @", " @ ", " % ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.STICK)
+                .build();
+    }
+
+    public void goldenGladiusRecipe() {
+        new RecipeFactory("121", Main.weaponsMasterList.get(119).getItemStack(), RecipeShape.SHAPED)
+                .shape(" ^ ", "$^$", "@&%")
+                .setIngredient('@', Material.STRING)
+                .setIngredient('%', Material.RED_DYE)
+                .setIngredient('$', Material.GOLD_INGOT)
+                .setIngredient('^', Material.GOLD_INGOT)
+                .setIngredient('&', Material.STICK)
+                .build();
+    }
+
+    public void goldenBlackfeldSwordRecipe() {
+        new RecipeFactory("122", Main.weaponsMasterList.get(120).getItemStack(), RecipeShape.SHAPED)
+                .shape("   ", "@% ", "$^ ")
+                .setIngredient('@', Material.GOLDEN_SWORD)
+                .setIngredient('%', Material.AMETHYST_SHARD)
+                .setIngredient('$', Material.MAGENTA_DYE)
+                .setIngredient('^', Material.COPPER_INGOT)
+                .build();
+    }
+
+    public void goldenDreistklezeRecipe() {
+        new RecipeFactory("123", Main.weaponsMasterList.get(121).getItemStack(), RecipeShape.SHAPED)
+                .shape(" @ ", " @ ", "$%$")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.OAK_PLANKS)
+                .setIngredient('$', Material.STICK)
+                .build();
+    }
+
+    public void goldenLongswordRecipe() {
+        new RecipeFactory("124", Main.weaponsMasterList.get(122).getItemStack(), RecipeShape.SHAPED)
+                .shape("   ", " @ ", "$  ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('$', Material.GOLDEN_SWORD)
+                .build();
+    }
+
+    public void goldenFlangedMaceRecipe() {
+        new RecipeFactory("125", Main.weaponsMasterList.get(123).getItemStack(), RecipeShape.SHAPED)
+                .shape("   ", "@  ", "%  ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.STICK)
+                .build();
+    }
+
+    public void goldenMorningstarRecipe() {
+        new RecipeFactory("126", Main.weaponsMasterList.get(124).getItemStack(), RecipeShape.SHAPED)
+                .shape(" $ ", "$@$", "%$ ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.STICK)
+                .setIngredient('$', Material.GOLD_NUGGET)
+                .build();
+    }
+
+    public void goldenWarhammerRecipe() {
+        new RecipeFactory("127", Main.weaponsMasterList.get(125).getItemStack(), RecipeShape.SHAPED)
+                .shape(" @ ", " %@", "%  ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.STICK)
+                .build();
+    }
+
+    public void goldenHatchetRecipe() {
+        new RecipeFactory("128", Main.weaponsMasterList.get(126).getItemStack(), RecipeShape.SHAPED)
+                .shape("   ", " @@", " @%")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.STICK)
+                .build();
+    }
+
+    public void goldenBattleaxeRecipe() {
+        new RecipeFactory("129", Main.weaponsMasterList.get(127).getItemStack(), RecipeShape.SHAPED)
+                .shape(" @ ", " %@", "%  ")
+                .setIngredient('@', Material.GOLDEN_AXE)
+                .setIngredient('%', Material.STICK)
+                .build();
+    }
+
+    public void goldenCombatAxeRecipe() {
+        new RecipeFactory("130", Main.weaponsMasterList.get(128).getItemStack(), RecipeShape.SHAPED)
+                .shape("   ", "@  ", "%  ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.GOLDEN_AXE)
+                .build();
+    }
+
+    public void goldenHalberdRecipe() {
+        new RecipeFactory("131", Main.weaponsMasterList.get(129).getItemStack(), RecipeShape.SHAPED)
+                .shape("  @", " % ", "%  ")
+                .setIngredient('@', Material.GOLDEN_AXE)
+                .setIngredient('%', Material.STICK)
+                .build();
+    }
+
+    public void goldenBattleHoeRecipe() {
+        new RecipeFactory("132", Main.weaponsMasterList.get(130).getItemStack(), RecipeShape.SHAPED)
+                .shape("@@@", "@% ", " % ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.STICK)
+                .build();
+    }
+
+    public void goldenScytheRecipe() {
+        new RecipeFactory("133", Main.weaponsMasterList.get(131).getItemStack(), RecipeShape.SHAPED)
+                .shape("@@%", " @ ", "@  ")
+                .setIngredient('@', Material.GOLD_INGOT)
+                .setIngredient('%', Material.AMETHYST_SHARD)
+                .build();
+    }
+
+    public void goldenDaneAxeRecipe() {
+        new RecipeFactory("134", Main.weaponsMasterList.get(132).getItemStack(), RecipeShape.SHAPED)
+                .shape("   ", " @ ", "%  ")
+                .setIngredient('@', Material.GOLDEN_AXE)
+                .setIngredient('%', Material.STICK)
                 .build();
     }
 }

@@ -6,6 +6,7 @@ import me.ShermansWorld.AlathraWeapons.enums.WeaponMaterial;
 import me.ShermansWorld.AlathraWeapons.enums.WeaponType;
 import me.ShermansWorld.AlathraWeapons.exceptions.InvalidMaterialException;
 import me.ShermansWorld.AlathraWeapons.recipes.CraftingRecipes;
+import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.List;
@@ -66,7 +67,7 @@ public class Main extends JavaPlugin {
                 new CustomWeapon("Netherite Rapier", 142, WeaponMaterial.NETHERITE, WeaponType.SWORD),
                 new CustomWeapon("Iron Scythe", 239, WeaponMaterial.IRON, WeaponType.AXE),
                 new CustomWeapon("Netherite Scythe", 439, WeaponMaterial.NETHERITE, WeaponType.AXE),
-                new CustomWeapon("Diamond Katana", 330, WeaponMaterial.DIAMOND, WeaponType.SWORD),
+                new CustomWeapon("Majestic Katana", 330, WeaponMaterial.DIAMOND, WeaponType.SWORD),
                 new CustomWeapon("Diamond Spear", 331, WeaponMaterial.DIAMOND, WeaponType.SWORD),
                 new CustomWeapon("Diamond Naginata", 332, WeaponMaterial.DIAMOND, WeaponType.SWORD),
                 new CustomWeapon("Diamond Pike", 333, WeaponMaterial.DIAMOND, WeaponType.SWORD),
@@ -119,7 +120,42 @@ public class Main extends JavaPlugin {
                 new CustomWeapon("Netherite Dreistkleze", 149, WeaponMaterial.NETHERITE, WeaponType.SWORD),
                 new CustomWeapon("Iron Longsword", 49, WeaponMaterial.IRON, WeaponType.SWORD),
                 new CustomWeapon("Diamond Longsword", 350, WeaponMaterial.DIAMOND, WeaponType.SWORD),
-                new CustomWeapon("Netherite Longsword", 150, WeaponMaterial.NETHERITE, WeaponType.SWORD)
+                new CustomWeapon("Netherite Longsword", 150, WeaponMaterial.NETHERITE, WeaponType.SWORD),
+                new CustomWeapon("Iron Giant Sword", 29, WeaponMaterial.IRON, WeaponType.SWORD),
+                new CustomWeapon("Iron Blackfeld Sword", 50, WeaponMaterial.IRON, WeaponType.SWORD),
+                new CustomWeapon("Netherite Giant Sword", 128, WeaponMaterial.NETHERITE, WeaponType.SWORD),
+                new CustomWeapon("Golden Giant Sword", 629, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Glorious Katana", 630, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Spear", 631, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Naginata", 632, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Pike", 633, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Dagger", 634, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Zweihander", 635, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Shortsword", 636, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Quarterstaff", 637, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Kunai", 638, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Sabre", 639, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Twin Blade", 640, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Scimitar", 641, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Rapier", 642, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Hook", 643, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Mace", 644, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Greatsword", 645, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Bident", 646, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Gladius", 647, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Blackfeld Sword", 648, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Dreistkleze", 649, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Longsword", 650, WeaponMaterial.GOLD, WeaponType.SWORD),
+                new CustomWeapon("Golden Flanged Mace", 730, WeaponMaterial.GOLD, WeaponType.AXE),
+                new CustomWeapon("Golden Morningstar", 731, WeaponMaterial.GOLD, WeaponType.AXE),
+                new CustomWeapon("Golden Warhammer", 732, WeaponMaterial.GOLD, WeaponType.AXE),
+                new CustomWeapon("Golden Hatchet", 733, WeaponMaterial.GOLD, WeaponType.AXE),
+                new CustomWeapon("Golden Battleaxe", 734, WeaponMaterial.GOLD, WeaponType.AXE),
+                new CustomWeapon("Golden Combat Axe", 735, WeaponMaterial.GOLD, WeaponType.AXE),
+                new CustomWeapon("Golden Halberd", 736, WeaponMaterial.GOLD, WeaponType.AXE),
+                new CustomWeapon("Golden Battle Hoe", 737, WeaponMaterial.GOLD, WeaponType.AXE),
+                new CustomWeapon("Golden Scythe", 739, WeaponMaterial.GOLD, WeaponType.AXE),
+                new CustomWeapon("Golden Dane Axe", 740, WeaponMaterial.GOLD, WeaponType.AXE)
             );
         } catch (InvalidMaterialException e) {
             getInstance().getLogger().warning(e.getMessage());
@@ -223,9 +259,44 @@ public class Main extends JavaPlugin {
         craftingRecipes.ironDreistklezeRecipe();
         craftingRecipes.diamondDreistklezeRecipe();
         craftingRecipes.netheriteDreistklezeRecipe();
-        craftingRecipes.ironLongsword();
-        craftingRecipes.diamondLongsword();
-        craftingRecipes.netheriteLongsword();
+        craftingRecipes.ironLongswordRecipe();
+        craftingRecipes.diamondLongswordRecipe();
+        craftingRecipes.netheriteLongswordRecipe();
+        craftingRecipes.ironGiantSwordRecipe();
+        craftingRecipes.ironBlackfeldSwordRecipe();
+        craftingRecipes.netheriteGiantSwordRecipe();
+        craftingRecipes.goldenGiantSwordRecipe();
+        craftingRecipes.goldenKatanaRecipe();
+        craftingRecipes.goldenSpearRecipe();
+        craftingRecipes.goldenNaginataRecipe();
+        craftingRecipes.goldenPikeRecipe();
+        craftingRecipes.goldenDaggerRecipe();
+        craftingRecipes.goldenZweihanderRecipe();
+        craftingRecipes.goldenShortswordRecipe();
+        craftingRecipes.goldenQuarterstaffRecipe();
+        craftingRecipes.goldenKunaiRecipe();
+        craftingRecipes.goldenSabreRecipe();
+        craftingRecipes.goldenTwinBladeRecipe();
+        craftingRecipes.goldenScimitarRecipe();
+        craftingRecipes.goldenRapierRecipe();
+        craftingRecipes.goldenHookRecipe();
+        craftingRecipes.goldenMaceRecipe();
+        craftingRecipes.goldenGreatswordRecipe();
+        craftingRecipes.goldenBidentRecipe();
+        craftingRecipes.goldenGladiusRecipe();
+        craftingRecipes.goldenBlackfeldSwordRecipe();
+        craftingRecipes.goldenDreistklezeRecipe();
+        craftingRecipes.goldenLongswordRecipe();
+        craftingRecipes.goldenFlangedMaceRecipe();
+        craftingRecipes.goldenMorningstarRecipe();
+        craftingRecipes.goldenWarhammerRecipe();
+        craftingRecipes.goldenHatchetRecipe();
+        craftingRecipes.goldenBattleaxeRecipe();
+        craftingRecipes.goldenCombatAxeRecipe();
+        craftingRecipes.goldenHalberdRecipe();
+        craftingRecipes.goldenBattleHoeRecipe();
+        craftingRecipes.goldenScytheRecipe();
+        craftingRecipes.goldenDaneAxeRecipe();
     }
 
     public void onEnable() {
@@ -233,6 +304,10 @@ public class Main extends JavaPlugin {
         registerWeapons();
         registerRecipes();
         new WeaponsCommands(this);
-        getCommand("weapons").setTabCompleter(new WeaponsTabCompletion());
+
+        PluginCommand weaponsCommand = getCommand("weapons");
+
+        if (weaponsCommand != null)
+            weaponsCommand.setTabCompleter(new WeaponsTabCompletion());
     }
 }

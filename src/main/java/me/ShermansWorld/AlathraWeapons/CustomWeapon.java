@@ -28,6 +28,7 @@ public class CustomWeapon {
         this.itemStack = switch (type) {
             case SWORD -> switch (material) {
                 case IRON -> new ItemStack(Material.IRON_SWORD, 1);
+                case GOLD -> new ItemStack(Material.GOLDEN_SWORD, 1);
                 case DIAMOND -> new ItemStack(Material.DIAMOND_SWORD, 1);
                 case NETHERITE -> new ItemStack(Material.NETHERITE_SWORD, 1);
                 case IGNORED -> {
@@ -36,6 +37,7 @@ public class CustomWeapon {
             };
             case AXE -> switch (material) {
                 case IRON -> new ItemStack(Material.IRON_AXE, 1);
+                case GOLD -> new ItemStack(Material.GOLDEN_SWORD, 1);
                 case DIAMOND -> new ItemStack(Material.DIAMOND_AXE, 1);
                 case NETHERITE -> new ItemStack(Material.NETHERITE_AXE, 1);
                 case IGNORED -> {
@@ -44,13 +46,13 @@ public class CustomWeapon {
             };
             case CROSSBOW -> switch (material) {
                 case IGNORED -> new ItemStack(Material.CROSSBOW, 1);
-                case IRON, DIAMOND, NETHERITE -> {
+                case IRON, DIAMOND, GOLD, NETHERITE -> {
                     throw new InvalidMaterialException("Tried to register item %s with invalid Material.".formatted(getDisplayName()));
                 }
             };
             case BOW -> switch (material) {
                 case IGNORED -> new ItemStack(Material.BOW, 1);
-                case IRON, DIAMOND, NETHERITE -> {
+                case IRON, DIAMOND, GOLD, NETHERITE -> {
                     throw new InvalidMaterialException("Tried to register item %s with invalid Material.".formatted(getDisplayName()));
                 }
             };
