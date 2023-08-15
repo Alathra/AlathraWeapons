@@ -24,14 +24,23 @@ repositories {
             includeGroup("com.github.milkdrinkers")
         }
     }
+
+    maven("https://repo.codemc.org/repository/maven-public/") {
+        content { includeGroup("dev.jorel") }
+    }
 }
 
 dependencies {
-    implementation("org.jetbrains:annotations:24.0.1")
+    compileOnly("org.jetbrains:annotations:24.0.1")
+    annotationProcessor("org.jetbrains:annotations:24.0.1")
 
-    compileOnly("io.papermc.paper:paper-api:1.19.3-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT")
 
-    implementation("com.github.milkdrinkers:colorparser:1.0.6")
+    implementation("com.github.milkdrinkers:colorparser:2.0.0")
+
+    implementation("dev.jorel:commandapi-bukkit-shade:9.0.3")
+    compileOnly("dev.jorel:commandapi-annotations:9.0.3")
+    annotationProcessor("dev.jorel:commandapi-annotations:9.0.3")
 }
 
 tasks {
@@ -45,7 +54,7 @@ tasks {
         // Set the release flag. This configures what version bytecode the compiler will emit, as well as what JDK APIs are usable.
         // See https://openjdk.java.net/jeps/247 for more information.
         options.release.set(17)
-        options.compilerArgs.add("-Xlint:-deprecation")
+        options.compilerArgs.addAll(arrayListOf("-Xlint:all", "-Xlint:-processing", "-Xdiags:verbose"))
     }
 
     processResources {
@@ -59,21 +68,29 @@ tasks {
         // Shadow classes
         // helper function to relocate a package into our package
         fun reloc(originPkg: String, targetPkg: String) = relocate(originPkg, "${project.group}.${targetPkg}")
+
+        reloc("com.github.milkdrinkers.colorparser", "colorparser")
+        reloc("dev.jorel.commandapi", "commandapi")
     }
 
     runServer {
         // Configure the Minecraft version for our task.
-        minecraftVersion("1.19.3")
+        minecraftVersion("1.20.1")
+
+        // IntelliJ IDEA debugger setup: https://docs.papermc.io/paper/dev/debugging#using-a-remote-debugger
+        jvmArgs("-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005")
+        systemProperty("terminal.jline", false)
+        systemProperty("terminal.ansi", true)
     }
 }
 
-bukkit {
+bukkit { // Options: https://github.com/Minecrell/plugin-yml#bukkit
     // Plugin main class (required)
     main = "${project.group}.Main"
 
     // Plugin Information
     name = project.name
-    prefix = "AlathraWeapons"
+    prefix = "${project.name}"
     version = "${project.version}"
     description = "${project.description}"
     authors = listOf("ShermansWorld")
@@ -82,11 +99,6 @@ bukkit {
 
     // Misc properties
     load = net.minecrell.pluginyml.bukkit.BukkitPluginDescription.PluginLoadOrder.POSTWORLD // STARTUP or POSTWORLD
-
-    commands {
-        register("weapons") {
-            description = "Used to give weapons"
-            usage = "Just use /weapons"
-        }
-    }
+    depend = listOf()
+    softDepend = listOf()
 }
