@@ -1,6 +1,6 @@
 package me.ShermansWorld.AlathraWeapons.listener;
 
-import me.ShermansWorld.AlathraWeapons.CustomWeapon;
+import me.ShermansWorld.AlathraWeapons.CustomItem;
 import me.ShermansWorld.AlathraWeapons.Main;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.event.EventHandler;
@@ -33,19 +33,19 @@ public class SmithingTableListener implements Listener {
         // If there's no custom model data then this isn't a custom item
         if (!oldMeta.hasCustomModelData()) return;
 
-        final @Nullable CustomWeapon customWeapon = main.getCustomWeaponFromItemStack(oldItem);
+        final @Nullable CustomItem customItem = main.getCustomItemFromItemStack(oldItem);
 
         // Do nothing if this isn't a custom item
-        if (customWeapon == null) return;
+        if (customItem == null) return;
 
         // Make item not upgradeable if there is no defined upgrade
-        if (!customWeapon.isUpgradeable()) {
+        if (!customItem.isUpgradeable()) {
             e.setResult(null);
             return;
         }
 
         // Upgrade item ourselves
-        final ItemStack newItem = customWeapon.getUpgradeable().getItemStack().asOne();
+        final ItemStack newItem = customItem.getUpgradeable().getItemStack().asOne();
         final ItemMeta newMeta = newItem.getItemMeta();
 
         if (oldItem.hasItemMeta()) {
