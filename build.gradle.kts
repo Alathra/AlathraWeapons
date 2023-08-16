@@ -67,7 +67,7 @@ tasks {
 
         // Shadow classes
         // helper function to relocate a package into our package
-        fun reloc(originPkg: String, targetPkg: String) = relocate(originPkg, "${project.group}.${targetPkg}")
+        fun reloc(originPkg: String, targetPkg: String) = relocate(originPkg, "${project.group}.deps.${targetPkg}")
 
         reloc("com.github.milkdrinkers.colorparser", "colorparser")
         reloc("dev.jorel.commandapi", "commandapi")
