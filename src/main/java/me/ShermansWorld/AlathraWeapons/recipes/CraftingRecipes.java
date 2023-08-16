@@ -53,7 +53,7 @@ public class CraftingRecipes {
                 .build();
     }
 
-    public void ironMorningStarRecipe() {
+    public void ironMorningstarRecipe() {
         new RecipeFactory("8", Main.weaponsMasterList.get(6).getItemStack(), RecipeShape.SHAPED)
                 .shape(" $ ", "$@$", "%$ ")
                 .setIngredient('@', Material.IRON_INGOT)
@@ -174,7 +174,7 @@ public class CraftingRecipes {
                 .build();
     }
 
-    public void netheriteMorningStarRecipe() {
+    public void netheriteMorningstarRecipe() {
         new RecipeFactory("22", Main.weaponsMasterList.get(21).getItemStack(), RecipeShape.SHAPED)
                 .shape(" $ ", "$@$", "%$ ")
                 .setIngredient('@', Material.NETHERITE_INGOT)
@@ -365,7 +365,7 @@ public class CraftingRecipes {
                 .build();
     }
 
-    public void diamondKatanaRecipe() {
+    public void majesticKatanaRecipe() {
         new RecipeFactory("46", Main.weaponsMasterList.get(44).getItemStack(), RecipeShape.SHAPED)
                 .shape("  @", " @ ", "%  ")
                 .setIngredient('@', Material.DIAMOND_BLOCK)
@@ -384,7 +384,7 @@ public class CraftingRecipes {
     public void diamondNaginataRecipe() {
         new RecipeFactory("48", Main.weaponsMasterList.get(46).getItemStack(), RecipeShape.SHAPED)
                 .shape(" @ ", " % ", "%  ")
-                .setIngredient('@', Material.DIAMOND)
+                .setIngredient('@', Material.DIAMOND_SWORD)
                 .setIngredient('%', Material.STICK)
                 .build();
     }
@@ -480,7 +480,7 @@ public class CraftingRecipes {
                 .build();
     }
 
-    public void diamondMorningStarRecipe() {
+    public void diamondMorningstarRecipe() {
         new RecipeFactory("60", Main.weaponsMasterList.get(58).getItemStack(), RecipeShape.SHAPED)
                 .shape(" $ ", "$@$", "%$ ")
                 .setIngredient('@', Material.DIAMOND)
@@ -877,7 +877,7 @@ public class CraftingRecipes {
                 .build();
     }
 
-    public void goldenKatanaRecipe() {
+    public void gloriousKatanaRecipe() {
         new RecipeFactory("104", Main.weaponsMasterList.get(102).getItemStack(), RecipeShape.SHAPED)
                 .shape("  @", " @ ", "%  ")
                 .setIngredient('@', Material.GOLD_BLOCK)

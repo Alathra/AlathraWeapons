@@ -19,7 +19,7 @@ public class WeaponsTabCompletion implements TabCompleter {
             completions.add("Iron_Naginata");
             completions.add("Iron_Pike");
             completions.add("Iron_Dagger");
-            completions.add("Iron_Morning_Star");
+            completions.add("Iron_Morningstar");
             completions.add("Iron_Zweihander");
             completions.add("Iron_Warhammer");
             completions.add("Iron_Shortsword");
@@ -36,7 +36,7 @@ public class WeaponsTabCompletion implements TabCompleter {
             completions.add("Netherite_Naginata");
             completions.add("Netherite_Pike");
             completions.add("Netherite_Dagger");
-            completions.add("Netherite_Morning_Star");
+            completions.add("Netherite_Morningstar");
             completions.add("Netherite_Zweihander");
             completions.add("Netherite_Warhammer");
             completions.add("Netherite_Shortsword");
@@ -54,7 +54,7 @@ public class WeaponsTabCompletion implements TabCompleter {
             completions.add("Netherite_Rapier");
             completions.add("Iron_Scythe");
             completions.add("Netherite_Scythe");
-            completions.add("Diamond_Katana");
+            completions.add("Majestic_Katana");
             completions.add("Diamond_Spear");
             completions.add("Diamond_Naginata");
             completions.add("Diamond_Pike");
@@ -68,7 +68,7 @@ public class WeaponsTabCompletion implements TabCompleter {
             completions.add("Diamond_Scimitar");
             completions.add("Diamond_Rapier");
             completions.add("Diamond_Flanged_Mace");
-            completions.add("Diamond_Morning_Star");
+            completions.add("Diamond_Morningstar");
             completions.add("Diamond_Warhammer");
             completions.add("Diamond_Hatchet");
             completions.add("Diamond_Battleaxe");
@@ -112,7 +112,7 @@ public class WeaponsTabCompletion implements TabCompleter {
             completions.add("Iron_Blackfeld_Sword");
             completions.add("Netherite_Giant_Sword");
             completions.add("Golden_Giant_Sword");
-            completions.add("Golden_Katana");
+            completions.add("Glorious_Katana");
             completions.add("Golden_Spear");
             completions.add("Golden_Naginata");
             completions.add("Golden_Pike");
@@ -143,6 +143,8 @@ public class WeaponsTabCompletion implements TabCompleter {
             completions.add("Golden_Battle_Hoe");
             completions.add("Golden_Scythe");
             completions.add("Golden_Dane_Axe");
+            completions.add("Iron_Twin_Blade");
+            completions.add("Netherite_Twin_Blade");
             return completions;
         }
         return Collections.emptyList();

@@ -6,6 +6,7 @@ import me.ShermansWorld.AlathraWeapons.enums.WeaponMaterial;
 import me.ShermansWorld.AlathraWeapons.enums.WeaponType;
 import me.ShermansWorld.AlathraWeapons.exceptions.InvalidMaterialException;
 import me.ShermansWorld.AlathraWeapons.recipes.CraftingRecipes;
+import me.ShermansWorld.AlathraWeapons.recipes.SmithingRecipes;
 import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -13,6 +14,7 @@ import java.util.List;
 
 public class Main extends JavaPlugin {
     private final static CraftingRecipes craftingRecipes = new CraftingRecipes();
+    private final static SmithingRecipes smithingRecipes = new SmithingRecipes();
     public static Main instance;
     public static List<CustomWeapon> weaponsMasterList;
 
@@ -29,7 +31,7 @@ public class Main extends JavaPlugin {
                 new CustomWeapon("Iron Naginata", 32, WeaponMaterial.IRON, WeaponType.SWORD),
                 new CustomWeapon("Iron Pike", 33, WeaponMaterial.IRON, WeaponType.SWORD),
                 new CustomWeapon("Iron Dagger", 34, WeaponMaterial.IRON, WeaponType.SWORD),
-                new CustomWeapon("Iron Morning Star", 231, WeaponMaterial.IRON, WeaponType.AXE),
+                new CustomWeapon("Iron Morningstar", 231, WeaponMaterial.IRON, WeaponType.AXE),
                 new CustomWeapon("Iron Zweihander", 35, WeaponMaterial.IRON, WeaponType.SWORD),
                 new CustomWeapon("Iron Warhammer", 232, WeaponMaterial.IRON, WeaponType.AXE),
                 new CustomWeapon("Iron Shortsword", 36, WeaponMaterial.IRON, WeaponType.SWORD),
@@ -44,7 +46,7 @@ public class Main extends JavaPlugin {
                 new CustomWeapon("Netherite Naginata", 132, WeaponMaterial.NETHERITE, WeaponType.SWORD),
                 new CustomWeapon("Netherite Pike", 133, WeaponMaterial.NETHERITE, WeaponType.SWORD),
                 new CustomWeapon("Netherite Dagger", 134, WeaponMaterial.NETHERITE, WeaponType.SWORD),
-                new CustomWeapon("Netherite Morning Star", 431, WeaponMaterial.NETHERITE, WeaponType.AXE),
+                new CustomWeapon("Netherite Morningstar", 431, WeaponMaterial.NETHERITE, WeaponType.AXE),
                 new CustomWeapon("Netherite Zweihander", 135, WeaponMaterial.NETHERITE, WeaponType.SWORD),
                 new CustomWeapon("Netherite Warhammer", 432, WeaponMaterial.NETHERITE, WeaponType.AXE),
                 new CustomWeapon("Netherite Shortsword", 136, WeaponMaterial.NETHERITE, WeaponType.SWORD),
@@ -81,7 +83,7 @@ public class Main extends JavaPlugin {
                 new CustomWeapon("Diamond Scimitar", 341, WeaponMaterial.DIAMOND, WeaponType.SWORD),
                 new CustomWeapon("Diamond Rapier", 342, WeaponMaterial.DIAMOND, WeaponType.SWORD),
                 new CustomWeapon("Diamond Flanged Mace", 530, WeaponMaterial.DIAMOND, WeaponType.AXE),
-                new CustomWeapon("Diamond Morning Star", 531, WeaponMaterial.DIAMOND, WeaponType.AXE),
+                new CustomWeapon("Diamond Morningstar", 531, WeaponMaterial.DIAMOND, WeaponType.AXE),
                 new CustomWeapon("Diamond Warhammer", 532, WeaponMaterial.DIAMOND, WeaponType.AXE),
                 new CustomWeapon("Diamond Hatchet", 533, WeaponMaterial.DIAMOND, WeaponType.AXE),
                 new CustomWeapon("Diamond Battleaxe", 534, WeaponMaterial.DIAMOND, WeaponType.AXE),
@@ -171,7 +173,7 @@ public class Main extends JavaPlugin {
         craftingRecipes.ironNaginataRecipe();
         craftingRecipes.ironFlangedMaceRecipe();
         craftingRecipes.ironDaggerRecipe();
-        craftingRecipes.ironMorningStarRecipe();
+        craftingRecipes.ironMorningstarRecipe();
         craftingRecipes.ironZweihanderRecipe();
         craftingRecipes.ironWarHammerRecipe();
         craftingRecipes.ironShortswordRecipe();
@@ -185,7 +187,7 @@ public class Main extends JavaPlugin {
         craftingRecipes.netheriteSpearRecipe();
         craftingRecipes.netheriteNaginataRecipe();
         craftingRecipes.netheriteFlangedMaceRecipe();
-        craftingRecipes.netheriteMorningStarRecipe();
+        craftingRecipes.netheriteMorningstarRecipe();
         craftingRecipes.netheriteDaggerRecipe();
         craftingRecipes.netheriteZweihanderRecipe();
         craftingRecipes.netheriteWarHammerRecipe();
@@ -208,7 +210,7 @@ public class Main extends JavaPlugin {
         craftingRecipes.netheriteRapierRecipe();
         craftingRecipes.ironScytheRecipe();
         craftingRecipes.netheriteScytheRecipe();
-        craftingRecipes.diamondKatanaRecipe();
+        craftingRecipes.majesticKatanaRecipe();
         craftingRecipes.diamondSpearRecipe();
         craftingRecipes.diamondNaginataRecipe();
         craftingRecipes.diamondPikeRecipe();
@@ -222,7 +224,7 @@ public class Main extends JavaPlugin {
         craftingRecipes.diamondScimitarRecipe();
         craftingRecipes.diamondRapierRecipe();
         craftingRecipes.diamondFlangedMaceRecipe();
-        craftingRecipes.diamondMorningStarRecipe();
+        craftingRecipes.diamondMorningstarRecipe();
         craftingRecipes.diamondWarHammerRecipe();
         craftingRecipes.diamondHatchetRecipe();
         craftingRecipes.diamondBattleaxeRecipe();
@@ -266,7 +268,7 @@ public class Main extends JavaPlugin {
         craftingRecipes.ironBlackfeldSwordRecipe();
         craftingRecipes.netheriteGiantSwordRecipe();
         craftingRecipes.goldenGiantSwordRecipe();
-        craftingRecipes.goldenKatanaRecipe();
+        craftingRecipes.gloriousKatanaRecipe();
         craftingRecipes.goldenSpearRecipe();
         craftingRecipes.goldenNaginataRecipe();
         craftingRecipes.goldenPikeRecipe();
@@ -297,6 +299,40 @@ public class Main extends JavaPlugin {
         craftingRecipes.goldenBattleHoeRecipe();
         craftingRecipes.goldenScytheRecipe();
         craftingRecipes.goldenDaneAxeRecipe();
+
+        smithingRecipes.antlerStaffUpgrade();
+        smithingRecipes.giantSwordUpgrade();
+        smithingRecipes.katanaUpgrade();
+        smithingRecipes.spearUpgrade();
+        smithingRecipes.naginataUpgrade();
+        smithingRecipes.pikeUpgrade();
+        smithingRecipes.daggerUpgrade();
+        smithingRecipes.zweihanderUpgrade();
+        smithingRecipes.shortswordUpgrade();
+        smithingRecipes.quarterstaffUpgrade();
+        smithingRecipes.kunaiUpgrade();
+        smithingRecipes.sabreUpgrade();
+        smithingRecipes.twinBladeUpgrade();
+        smithingRecipes.scimitarUpgrade();
+        smithingRecipes.rapierUpgrade();
+        smithingRecipes.hookUpgrade();
+        smithingRecipes.maceUpgrade();
+        smithingRecipes.greatswordUpgrade();
+        smithingRecipes.bidentUpgrade();
+        smithingRecipes.gladiusUpgrade();
+        smithingRecipes.blackfeldSwordUpgrade();
+        smithingRecipes.dreistklezeUpgrade();
+        smithingRecipes.longswordUpgrade();
+        smithingRecipes.flangedMaceUpgrade();
+        smithingRecipes.morningstarUpgrade();
+        smithingRecipes.warhammerUpgrade();
+        smithingRecipes.hatchetUpgrade();
+        smithingRecipes.battleaxeUpgrade();
+        smithingRecipes.combatAxeUpgrade();
+        smithingRecipes.halberdUpgrade();
+        smithingRecipes.battleHoeUpgrade();
+        smithingRecipes.scytheUpgrade();
+        smithingRecipes.daneAxeUpgrade();
     }
 
     public void onEnable() {
