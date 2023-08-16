@@ -94,7 +94,7 @@ bukkit { // Options: https://github.com/Minecrell/plugin-yml#bukkit
     version = "${project.version}"
     description = "${project.description}"
     authors = listOf("ShermansWorld")
-    contributors = listOf("darksaid98")
+    contributors = listOf("NuclearDonut", "darksaid98")
     apiVersion = "1.19"
 
     // Misc properties
