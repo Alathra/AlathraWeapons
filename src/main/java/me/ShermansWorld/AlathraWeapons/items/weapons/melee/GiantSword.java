@@ -28,28 +28,28 @@ public class GiantSword implements CustomItemGroup {
             .setUpgradeable(goldItem);
         Main.registerItem(ironItem);
 
-        new RecipeFactory("102", netheriteItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), netheriteItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" @@", "%@@", "$% ")
             .setIngredient('@', Material.NETHERITE_INGOT)
             .setIngredient('%', Material.GOLD_INGOT)
             .setIngredient('$', Material.STICK)
             .build();
 
-        new RecipeFactory("80", diamondItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" @@", "%@@", "$% ")
             .setIngredient('@', Material.DIAMOND)
             .setIngredient('%', Material.GOLD_INGOT)
             .setIngredient('$', Material.STICK)
             .build();
 
-        new RecipeFactory("103", goldItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), goldItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" @@", "%@@", "$% ")
             .setIngredient('@', Material.GOLD_INGOT)
             .setIngredient('%', Material.AMETHYST_SHARD)
             .setIngredient('$', Material.STICK)
             .build();
 
-        new RecipeFactory("100", ironItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), ironItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" @@", "%@@", "$% ")
             .setIngredient('@', Material.IRON_INGOT)
             .setIngredient('%', Material.GOLD_INGOT)

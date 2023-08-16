@@ -28,25 +28,25 @@ public class Pike implements CustomItemGroup {
             .setUpgradeable(goldItem);
         Main.registerItem(ironItem);
 
-        new RecipeFactory("20", netheriteItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), netheriteItem.getItemStack(), RecipeShape.SHAPED)
             .shape("  @", " % ", "%  ")
             .setIngredient('@', Material.NETHERITE_INGOT)
             .setIngredient('%', Material.STICK)
             .build();
 
-        new RecipeFactory("49", diamondItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
             .shape("  @", " % ", "%  ")
             .setIngredient('@', Material.DIAMOND)
             .setIngredient('%', Material.STICK)
             .build();
 
-        new RecipeFactory("107", goldItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), goldItem.getItemStack(), RecipeShape.SHAPED)
             .shape("  @", " % ", "%  ")
             .setIngredient('@', Material.GOLD_INGOT)
             .setIngredient('%', Material.STICK)
             .build();
 
-        new RecipeFactory("3", ironItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), ironItem.getItemStack(), RecipeShape.SHAPED)
             .shape("  @", " % ", "%  ")
             .setIngredient('@', Material.IRON_INGOT)
             .setIngredient('%', Material.STICK)

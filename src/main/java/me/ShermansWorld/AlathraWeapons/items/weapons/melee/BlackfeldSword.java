@@ -28,7 +28,7 @@ public class BlackfeldSword implements CustomItemGroup {
             .setUpgradeable(goldItem);
         Main.registerItem(ironItem);
 
-        new RecipeFactory("93", netheriteItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), netheriteItem.getItemStack(), RecipeShape.SHAPED)
             .shape("   ", "@% ", "$^ ")
             .setIngredient('@', Material.NETHERITE_SWORD)
             .setIngredient('%', Material.GOLD_NUGGET)
@@ -36,7 +36,7 @@ public class BlackfeldSword implements CustomItemGroup {
             .setIngredient('^', Material.GOLD_INGOT)
             .build();
 
-        new RecipeFactory("92", diamondItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
             .shape("   ", "@% ", "$^ ")
             .setIngredient('@', Material.DIAMOND_SWORD)
             .setIngredient('%', Material.GOLD_NUGGET)
@@ -44,7 +44,7 @@ public class BlackfeldSword implements CustomItemGroup {
             .setIngredient('^', Material.GOLD_INGOT)
             .build();
 
-        new RecipeFactory("122", goldItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), goldItem.getItemStack(), RecipeShape.SHAPED)
             .shape("   ", "@% ", "$^ ")
             .setIngredient('@', Material.GOLDEN_SWORD)
             .setIngredient('%', Material.AMETHYST_SHARD)
@@ -52,7 +52,7 @@ public class BlackfeldSword implements CustomItemGroup {
             .setIngredient('^', Material.COPPER_INGOT)
             .build();
 
-        new RecipeFactory("101", ironItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), ironItem.getItemStack(), RecipeShape.SHAPED)
             .shape("   ", "@% ", "$^ ")
             .setIngredient('@', Material.IRON_SWORD)
             .setIngredient('%', Material.GOLD_NUGGET)

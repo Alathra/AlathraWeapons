@@ -28,25 +28,25 @@ public class Battleaxe implements CustomItemGroup {
             .setUpgradeable(goldItem);
         Main.registerItem(ironItem);
 
-        new RecipeFactory("28", netheriteItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), netheriteItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" @ ", " %@", "%  ")
             .setIngredient('@', Material.NETHERITE_AXE)
             .setIngredient('%', Material.STICK)
             .build();
 
-        new RecipeFactory("63", diamondItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" @ ", " %@", "%  ")
             .setIngredient('@', Material.DIAMOND_AXE)
             .setIngredient('%', Material.STICK)
             .build();
 
-        new RecipeFactory("129", goldItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), goldItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" @ ", " %@", "%  ")
             .setIngredient('@', Material.GOLDEN_AXE)
             .setIngredient('%', Material.STICK)
             .build();
 
-        new RecipeFactory("13", ironItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), ironItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" @ ", " %@", "%  ")
             .setIngredient('@', Material.IRON_AXE)
             .setIngredient('%', Material.STICK)

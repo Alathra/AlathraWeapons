@@ -16,7 +16,7 @@ public class Longbow implements CustomItemGroup {
         final CustomItem bowItem = new CustomItem("Longbow", "Longbow", 14915, WeaponMaterial.IGNORED, WeaponType.BOW);
         Main.registerItem(bowItem);
 
-        new RecipeFactory("88", bowItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), bowItem.getItemStack(), RecipeShape.SHAPED)
             .shape("@% ", "@ $", "@% ")
             .setIngredient('@', Material.STRING)
             .setIngredient('%', Material.TRIPWIRE_HOOK)

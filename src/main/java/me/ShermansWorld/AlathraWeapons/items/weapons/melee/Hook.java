@@ -28,26 +28,26 @@ public class Hook implements CustomItemGroup {
             .setUpgradeable(goldItem);
         Main.registerItem(ironItem);
 
-        new RecipeFactory("70", diamondItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" @@", " @ ", " $ ")
             .setIngredient('@', Material.NETHERITE_INGOT)
             .setIngredient('$', Material.STICK)
             .build();
 
-        new RecipeFactory("69", diamondItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" @@", " @ ", " $ ")
             .setIngredient('@', Material.DIAMOND)
             .setIngredient('$', Material.STICK)
             .build();
 
-        new RecipeFactory("117", goldItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), goldItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" @@", " % ", " $ ")
             .setIngredient('@', Material.GOLD_NUGGET)
             .setIngredient('%', Material.GOLD_INGOT)
             .setIngredient('$', Material.STICK)
             .build();
 
-        new RecipeFactory("68", ironItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), ironItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" @@", " % ", " $ ")
             .setIngredient('@', Material.IRON_NUGGET)
             .setIngredient('%', Material.IRON_INGOT)

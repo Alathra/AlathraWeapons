@@ -28,25 +28,25 @@ public class Scythe implements CustomItemGroup {
             .setUpgradeable(goldItem);
         Main.registerItem(ironItem);
 
-        new RecipeFactory("45", netheriteItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), netheriteItem.getItemStack(), RecipeShape.SHAPED)
             .shape("@@%", " @ ", "@  ")
             .setIngredient('@', Material.NETHERITE_INGOT)
             .setIngredient('%', Material.GOLD_NUGGET)
             .build();
 
-        new RecipeFactory("67", diamondItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
             .shape("@@%", " @ ", "@  ")
             .setIngredient('@', Material.DIAMOND)
             .setIngredient('%', Material.GOLD_NUGGET)
             .build();
 
-        new RecipeFactory("133", goldItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), goldItem.getItemStack(), RecipeShape.SHAPED)
             .shape("@@%", " @ ", "@  ")
             .setIngredient('@', Material.GOLD_INGOT)
             .setIngredient('%', Material.AMETHYST_SHARD)
             .build();
 
-        new RecipeFactory("44", ironItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), ironItem.getItemStack(), RecipeShape.SHAPED)
             .shape("@@%", " @ ", "@  ")
             .setIngredient('@', Material.IRON_INGOT)
             .setIngredient('%', Material.GOLD_NUGGET)

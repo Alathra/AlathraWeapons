@@ -24,7 +24,7 @@ public class AntlerStaff implements CustomItemGroup {
             .setUpgradeable(diamondItem);
         Main.registerItem(ironItem);
 
-        new RecipeFactory("86", netheriteItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), netheriteItem.getItemStack(), RecipeShape.SHAPED)
             .shape("@%@", "$^&", "^$#")
             .setIngredient('@', Material.NETHERITE_INGOT)
             .setIngredient('%', Material.BONE_BLOCK)
@@ -34,7 +34,7 @@ public class AntlerStaff implements CustomItemGroup {
             .setIngredient('#', Material.STRING)
             .build();
 
-        new RecipeFactory("85", diamondItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
             .shape("@%@", "$^&", "^$#")
             .setIngredient('@', Material.DIAMOND)
             .setIngredient('%', Material.BONE_BLOCK)
@@ -44,7 +44,7 @@ public class AntlerStaff implements CustomItemGroup {
             .setIngredient('#', Material.STRING)
             .build();
 
-        new RecipeFactory("84", ironItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), ironItem.getItemStack(), RecipeShape.SHAPED)
             .shape("@%@", "$^&", "^$#")
             .setIngredient('@', Material.IRON_INGOT)
             .setIngredient('%', Material.BONE_BLOCK)

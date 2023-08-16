@@ -16,7 +16,7 @@ public class Faebow implements CustomItemGroup {
         final CustomItem bowItem = new CustomItem("Faebow", "Faebow", 14914, WeaponMaterial.IGNORED, WeaponType.CROSSBOW);
         Main.registerItem(bowItem);
 
-        new RecipeFactory("87", bowItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), bowItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" @$", "@%^", " @$")
             .setIngredient('@', Material.STRIPPED_MANGROVE_LOG)
             .setIngredient('%', Material.CROSSBOW)

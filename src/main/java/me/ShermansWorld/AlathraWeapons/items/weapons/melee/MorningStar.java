@@ -28,28 +28,28 @@ public class MorningStar implements CustomItemGroup {
             .setUpgradeable(goldItem);
         Main.registerItem(ironItem);
 
-        new RecipeFactory("22", netheriteItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), netheriteItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" $ ", "$@$", "%$ ")
             .setIngredient('@', Material.NETHERITE_INGOT)
             .setIngredient('%', Material.STICK)
             .setIngredient('$', Material.AMETHYST_SHARD)
             .build();
 
-        new RecipeFactory("60", diamondItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" $ ", "$@$", "%$ ")
             .setIngredient('@', Material.DIAMOND)
             .setIngredient('%', Material.STICK)
             .setIngredient('$', Material.AMETHYST_SHARD)
             .build();
 
-        new RecipeFactory("126", goldItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), goldItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" $ ", "$@$", "%$ ")
             .setIngredient('@', Material.GOLD_INGOT)
             .setIngredient('%', Material.STICK)
             .setIngredient('$', Material.GOLD_NUGGET)
             .build();
 
-        new RecipeFactory("8", ironItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), ironItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" $ ", "$@$", "%$ ")
             .setIngredient('@', Material.IRON_INGOT)
             .setIngredient('%', Material.STICK)

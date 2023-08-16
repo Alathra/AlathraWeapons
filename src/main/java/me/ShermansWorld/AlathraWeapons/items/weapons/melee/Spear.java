@@ -28,25 +28,25 @@ public class Spear implements CustomItemGroup {
             .setUpgradeable(goldItem);
         Main.registerItem(ironItem);
 
-        new RecipeFactory("17", netheriteItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), netheriteItem.getItemStack(), RecipeShape.SHAPED)
             .shape("  @", " % ", "%  ")
             .setIngredient('@', Material.NETHERITE_SWORD)
             .setIngredient('%', Material.STICK)
             .build();
 
-        new RecipeFactory("47", diamondItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
             .shape("  @", " % ", "%  ")
             .setIngredient('@', Material.DIAMOND_SWORD)
             .setIngredient('%', Material.STICK)
             .build();
 
-        new RecipeFactory("105", goldItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), goldItem.getItemStack(), RecipeShape.SHAPED)
             .shape("  @", " % ", "%  ")
             .setIngredient('@', Material.GOLDEN_SWORD)
             .setIngredient('%', Material.STICK)
             .build();
 
-        new RecipeFactory("4", ironItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), ironItem.getItemStack(), RecipeShape.SHAPED)
             .shape("  @", " % ", "%  ")
             .setIngredient('@', Material.IRON_SWORD)
             .setIngredient('%', Material.STICK)

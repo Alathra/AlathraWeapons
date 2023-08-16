@@ -28,25 +28,25 @@ public class DaneAxe implements CustomItemGroup {
             .setUpgradeable(goldItem);
         Main.registerItem(ironItem);
 
-        new RecipeFactory("83", netheriteItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), netheriteItem.getItemStack(), RecipeShape.SHAPED)
             .shape("   ", " @ ", "%  ")
             .setIngredient('@', Material.NETHERITE_AXE)
             .setIngredient('%', Material.STICK)
             .build();
 
-        new RecipeFactory("82", diamondItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
             .shape("   ", " @ ", "%  ")
             .setIngredient('@', Material.DIAMOND_AXE)
             .setIngredient('%', Material.STICK)
             .build();
 
-        new RecipeFactory("134", goldItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), goldItem.getItemStack(), RecipeShape.SHAPED)
             .shape("   ", " @ ", "%  ")
             .setIngredient('@', Material.GOLDEN_AXE)
             .setIngredient('%', Material.STICK)
             .build();
 
-        new RecipeFactory("81", ironItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), ironItem.getItemStack(), RecipeShape.SHAPED)
             .shape("   ", " @ ", "%  ")
             .setIngredient('@', Material.IRON_AXE)
             .setIngredient('%', Material.STICK)

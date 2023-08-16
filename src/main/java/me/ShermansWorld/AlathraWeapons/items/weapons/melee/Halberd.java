@@ -28,25 +28,25 @@ public class Halberd implements CustomItemGroup {
             .setUpgradeable(goldItem);
         Main.registerItem(ironItem);
 
-        new RecipeFactory("30", netheriteItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), netheriteItem.getItemStack(), RecipeShape.SHAPED)
             .shape("  @", " % ", "%  ")
             .setIngredient('@', Material.NETHERITE_AXE)
             .setIngredient('%', Material.STICK)
             .build();
 
-        new RecipeFactory("65", diamondItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
             .shape("  @", " % ", "%  ")
             .setIngredient('@', Material.DIAMOND_AXE)
             .setIngredient('%', Material.STICK)
             .build();
 
-        new RecipeFactory("131", goldItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), goldItem.getItemStack(), RecipeShape.SHAPED)
             .shape("  @", " % ", "%  ")
             .setIngredient('@', Material.GOLDEN_AXE)
             .setIngredient('%', Material.STICK)
             .build();
 
-        new RecipeFactory("15", ironItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), ironItem.getItemStack(), RecipeShape.SHAPED)
             .shape("  @", " % ", "%  ")
             .setIngredient('@', Material.IRON_AXE)
             .setIngredient('%', Material.STICK)

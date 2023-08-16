@@ -28,7 +28,7 @@ public class Gladius implements CustomItemGroup {
             .setUpgradeable(goldItem);
         Main.registerItem(ironItem);
 
-        new RecipeFactory("91", netheriteItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), netheriteItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" ^ ", "$^$", "@&%")
             .setIngredient('@', Material.STRING)
             .setIngredient('%', Material.RED_DYE)
@@ -37,7 +37,7 @@ public class Gladius implements CustomItemGroup {
             .setIngredient('&', Material.STICK)
             .build();
 
-        new RecipeFactory("90", diamondItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" ^ ", "$^$", "@&%")
             .setIngredient('@', Material.STRING)
             .setIngredient('%', Material.RED_DYE)
@@ -46,7 +46,7 @@ public class Gladius implements CustomItemGroup {
             .setIngredient('&', Material.STICK)
             .build();
 
-        new RecipeFactory("121", goldItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), goldItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" ^ ", "$^$", "@&%")
             .setIngredient('@', Material.STRING)
             .setIngredient('%', Material.RED_DYE)
@@ -55,7 +55,7 @@ public class Gladius implements CustomItemGroup {
             .setIngredient('&', Material.STICK)
             .build();
 
-        new RecipeFactory("89", ironItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), ironItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" ^ ", "$^$", "@&%")
             .setIngredient('@', Material.STRING)
             .setIngredient('%', Material.RED_DYE)

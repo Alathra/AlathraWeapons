@@ -28,19 +28,19 @@ public class Katana implements CustomItemGroup {
             .setUpgradeable(goldItem);
         Main.registerItem(ironItem);
 
-        new RecipeFactory("16", netheriteItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), netheriteItem.getItemStack(), RecipeShape.SHAPED)
             .shape("  @", " @ ", "%  ")
             .setIngredient('@', Material.NETHERITE_BLOCK)
             .setIngredient('%', Material.STICK)
             .build();
 
-        new RecipeFactory("46", diamondItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
             .shape("  @", " @ ", "%  ")
             .setIngredient('@', Material.DIAMOND_BLOCK)
             .setIngredient('%', Material.STICK)
             .build();
 
-        new RecipeFactory("104", goldItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), goldItem.getItemStack(), RecipeShape.SHAPED)
             .shape("  @", " @ ", "%  ")
             .setIngredient('@', Material.GOLD_BLOCK)
             .setIngredient('%', Material.STICK)
