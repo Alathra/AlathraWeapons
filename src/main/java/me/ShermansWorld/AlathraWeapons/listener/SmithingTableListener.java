@@ -2,71 +2,69 @@ package me.ShermansWorld.AlathraWeapons.listener;
 
 import me.ShermansWorld.AlathraWeapons.CustomItem;
 import me.ShermansWorld.AlathraWeapons.Main;
-import org.bukkit.enchantments.Enchantment;
+import net.kyori.adventure.text.Component;
+import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.PrepareSmithingEvent;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.SmithingInventory;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.jetbrains.annotations.Nullable;
 
-import java.util.Map;
+import java.util.HashMap;
 
 public class SmithingTableListener implements Listener {
-    private final Main main;
+    private final HashMap<CustomItem, CustomItem> smithingConversions = Main.getSmithingUpgrades();
 
-    public SmithingTableListener(Main main) {
-        this.main = main;
+    public Component nameParser(Component equipmentName) {
+        for (CustomItem customItem : smithingConversions.keySet()) {
+            if (equipmentName.equals(customItem.getDisplayNameComponent())) {
+                return smithingConversions.get(customItem).getDisplayNameComponent();
+            }
+        }
+
+        return equipmentName;
+    }
+
+    public int modelParser(int equipmentModel) {
+        for (CustomItem customItem : smithingConversions.keySet()) {
+            if (equipmentModel == customItem.getModelData()) {
+                return smithingConversions.get(customItem).getModelData();
+            }
+        }
+
+        return equipmentModel;
     }
 
     @EventHandler
-    public void onSmithingItemManipulation(PrepareSmithingEvent e) {
-        final SmithingInventory inv = e.getInventory();
-        final @Nullable ItemStack oldItem = inv.getInputEquipment();
+    @SuppressWarnings("unused")
+    public void upgradeHandler(PrepareSmithingEvent upgradeEvent) {
+        if (upgradeEvent.getInventory().getInputTemplate() != null) return;
 
-        // If there's no meta data then this isn't a custom item
-        if (!oldItem.hasItemMeta()) return;
+        if (upgradeEvent.getInventory().getInputEquipment() == null) return;
 
-        final ItemMeta oldMeta = oldItem.getItemMeta();
+        if (upgradeEvent.getInventory().getInputMineral() == null) return;
 
-        // If there's no custom model data then this isn't a custom item
-        if (!oldMeta.hasCustomModelData()) return;
+        if (upgradeEvent.getInventory().getInputMineral().getType() != Material.NETHERITE_INGOT) return;
 
-        final @Nullable CustomItem customItem = main.getCustomItemFromItemStack(oldItem);
+        if (upgradeEvent.getResult() == null) return;
 
-        // Do nothing if this isn't a custom item
-        if (customItem == null) return;
+        ItemStack result = upgradeEvent.getResult();
+        ItemMeta resultMeta = result.getItemMeta();
 
-        // Make item not upgradeable if there is no defined upgrade
-        if (!customItem.isUpgradeable()) {
-            e.setResult(null);
-            return;
-        }
+        ItemMeta equipmentMeta = upgradeEvent.getInventory().getInputEquipment().getItemMeta();
+        Component nameCheck = null;
+        int modelCheck = 0;
 
-        // Upgrade item ourselves
-        final ItemStack newItem = customItem.getUpgradeable().getItemStack().asOne();
-        final ItemMeta newMeta = newItem.getItemMeta();
+        if (equipmentMeta.hasDisplayName()) nameCheck = nameParser(equipmentMeta.displayName());
 
-        if (oldItem.hasItemMeta()) {
-            if (oldMeta.hasAttributeModifiers())
-                newMeta.setAttributeModifiers(oldMeta.getAttributeModifiers());
+        if (equipmentMeta.hasCustomModelData()) modelCheck = modelParser(equipmentMeta.getCustomModelData());
 
-            if (oldMeta.hasEnchants()) {
-                Map<Enchantment, Integer> enchants = oldMeta.getEnchants();
-                enchants.forEach((enchant, level) -> newMeta.addEnchant(enchant, level, true));
-            }
+        if (nameCheck != null) resultMeta.displayName(nameCheck);
 
-            if(oldMeta.hasDisplayName())
-                newMeta.displayName(oldMeta.displayName());
+        if (modelCheck != 0) resultMeta.setCustomModelData(modelCheck);
 
-            if (oldMeta.hasLore())
-                newMeta.lore(oldMeta.lore());
-        }
+        result.setItemMeta(resultMeta);
 
-        newItem.setItemMeta(newMeta);
-
-        // Override result item
-        inv.setResult(newItem);
+        upgradeEvent.setResult(result);
     }
 }

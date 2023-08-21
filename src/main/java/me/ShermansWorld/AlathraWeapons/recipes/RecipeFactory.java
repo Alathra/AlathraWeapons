@@ -13,12 +13,11 @@ import org.jetbrains.annotations.Nullable;
 public class RecipeFactory {
     final static Server server = Bukkit.getServer();
     private static final @NotNull Main instance = Main.getInstance();
-    private static @Nullable NamespacedKey key;
     private final @Nullable Recipe recipe;
 
 
     public RecipeFactory(String nameSpaceKey, ItemStack itemStack, RecipeShape shape) {
-        key = new NamespacedKey(instance, nameSpaceKey);
+        NamespacedKey key = new NamespacedKey(instance, nameSpaceKey);
 
         recipe = switch (shape) {
             case SHAPED -> new ShapedRecipe(key, itemStack);

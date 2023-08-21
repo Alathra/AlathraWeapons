@@ -55,5 +55,7 @@ public class Dreistkleze implements CustomItemGroup {
             .setIngredient('%', Material.OAK_PLANKS)
             .setIngredient('$', Material.STICK)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

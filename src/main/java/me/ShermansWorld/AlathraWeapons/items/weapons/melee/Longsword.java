@@ -51,5 +51,7 @@ public class Longsword implements CustomItemGroup {
             .setIngredient('@', Material.IRON_INGOT)
             .setIngredient('$', Material.IRON_SWORD)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

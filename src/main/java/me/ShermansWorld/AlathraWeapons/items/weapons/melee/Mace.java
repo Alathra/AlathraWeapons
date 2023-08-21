@@ -55,5 +55,7 @@ public class Mace implements CustomItemGroup {
             .setIngredient('%', Material.STICK)
             .setIngredient('$', Material.LEATHER)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

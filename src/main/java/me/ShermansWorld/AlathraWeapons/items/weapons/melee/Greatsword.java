@@ -55,5 +55,7 @@ public class Greatsword implements CustomItemGroup {
             .setIngredient('%', Material.STICK)
             .setIngredient('$', Material.OAK_LOG)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

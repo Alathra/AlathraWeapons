@@ -51,5 +51,7 @@ public class CombatAxe implements CustomItemGroup {
             .setIngredient('@', Material.IRON_INGOT)
             .setIngredient('%', Material.IRON_AXE)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

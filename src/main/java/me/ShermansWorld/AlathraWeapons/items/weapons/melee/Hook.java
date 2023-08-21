@@ -28,7 +28,7 @@ public class Hook implements CustomItemGroup {
             .setUpgradeable(goldItem);
         Main.registerItem(ironItem);
 
-        new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
+        new RecipeFactory(Main.getIncrementNameSpaceKey(), netheriteItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" @@", " @ ", " $ ")
             .setIngredient('@', Material.NETHERITE_INGOT)
             .setIngredient('$', Material.STICK)
@@ -53,5 +53,7 @@ public class Hook implements CustomItemGroup {
             .setIngredient('%', Material.IRON_INGOT)
             .setIngredient('$', Material.STICK)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

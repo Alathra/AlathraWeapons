@@ -26,6 +26,7 @@ public class WeaponsCommand {
             .register();
     }
 
+    @SuppressWarnings("DataFlowIssue")
     private CommandAPICommand give() {
         return new CommandAPICommand("give")
             .withFullDescription("Used to give weapons.")

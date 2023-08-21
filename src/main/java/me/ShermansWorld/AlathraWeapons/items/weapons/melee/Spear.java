@@ -51,5 +51,7 @@ public class Spear implements CustomItemGroup {
             .setIngredient('@', Material.IRON_SWORD)
             .setIngredient('%', Material.STICK)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

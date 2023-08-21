@@ -55,5 +55,7 @@ public class MorningStar implements CustomItemGroup {
             .setIngredient('%', Material.STICK)
             .setIngredient('$', Material.IRON_NUGGET)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

@@ -55,5 +55,7 @@ public class Sabre implements CustomItemGroup {
             .setIngredient('%', Material.STICK)
             .setIngredient('$', Material.LAPIS_LAZULI)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

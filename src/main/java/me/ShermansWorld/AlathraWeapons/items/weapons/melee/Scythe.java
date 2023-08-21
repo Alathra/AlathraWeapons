@@ -51,5 +51,7 @@ public class Scythe implements CustomItemGroup {
             .setIngredient('@', Material.IRON_INGOT)
             .setIngredient('%', Material.GOLD_NUGGET)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

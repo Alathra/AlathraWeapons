@@ -51,5 +51,7 @@ public class Rapier implements CustomItemGroup {
             .setIngredient('@', Material.IRON_INGOT)
             .setIngredient('%', Material.LIGHTNING_ROD)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

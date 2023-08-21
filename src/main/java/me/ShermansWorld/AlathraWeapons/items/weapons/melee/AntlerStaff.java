@@ -53,5 +53,7 @@ public class AntlerStaff implements CustomItemGroup {
             .setIngredient('&', Material.IRON_NUGGET)
             .setIngredient('#', Material.STRING)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

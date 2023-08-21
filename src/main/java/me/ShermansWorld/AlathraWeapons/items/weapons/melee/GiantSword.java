@@ -55,5 +55,7 @@ public class GiantSword implements CustomItemGroup {
             .setIngredient('%', Material.GOLD_INGOT)
             .setIngredient('$', Material.STICK)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

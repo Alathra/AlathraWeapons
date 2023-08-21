@@ -51,5 +51,7 @@ public class Halberd implements CustomItemGroup {
             .setIngredient('@', Material.IRON_AXE)
             .setIngredient('%', Material.STICK)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

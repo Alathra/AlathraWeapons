@@ -16,6 +16,7 @@ import java.util.List;
 public class CustomItem {
     private final String id;
     private final String displayName;
+    private final Component displayNameComponent;
     private final WeaponMaterial material;
     private final int modelData;
     private final ItemStack itemStack;
@@ -57,7 +58,8 @@ public class CustomItem {
         final List<Component> lore = List.of(
             ColorParser.of("<gold>Custom Weapon").build().decoration(TextDecoration.ITALIC, TextDecoration.State.FALSE)
         );
-        meta.displayName(ColorParser.of(displayName).build());
+        displayNameComponent = ColorParser.of(displayName).build();
+        meta.displayName(displayNameComponent);
         meta.setCustomModelData(modelData);
         meta.lore(lore);
 
@@ -74,6 +76,10 @@ public class CustomItem {
         return this.displayName;
     }
 
+    @NotNull
+    public Component getDisplayNameComponent() {
+        return this.displayNameComponent;
+    }
     @NotNull
     public WeaponMaterial getMaterial() {
         return this.material;

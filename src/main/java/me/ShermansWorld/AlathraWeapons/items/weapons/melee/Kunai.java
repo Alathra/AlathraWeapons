@@ -51,5 +51,7 @@ public class Kunai implements CustomItemGroup {
             .setIngredient('@', Material.IRON_INGOT)
             .setIngredient('%', Material.TRIPWIRE_HOOK)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

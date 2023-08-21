@@ -55,5 +55,7 @@ public class TwinBlade implements CustomItemGroup {
             .setIngredient('%', Material.STICK)
             .setIngredient('$', Material.DIAMOND)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

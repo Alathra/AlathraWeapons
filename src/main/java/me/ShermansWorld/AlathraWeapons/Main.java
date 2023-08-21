@@ -7,20 +7,22 @@ import me.ShermansWorld.AlathraWeapons.items.weapons.melee.*;
 import me.ShermansWorld.AlathraWeapons.items.weapons.ranged.Faebow;
 import me.ShermansWorld.AlathraWeapons.items.weapons.ranged.Longbow;
 import me.ShermansWorld.AlathraWeapons.listener.ListenerHandler;
-import org.bukkit.inventory.ItemStack;
+import me.ShermansWorld.AlathraWeapons.recipes.VanillaSmithing;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Main extends JavaPlugin {
     public static Main instance;
-    private CommandHandler commandHandler;
-    private ListenerHandler listenerHandler;
+    private final List<Reloadable> reloadables = new ArrayList<>();
+
+    private static final HashMap<CustomItem, CustomItem> smithingUpgrades = new HashMap<>();
 
     public static List<CustomItem> registeredItems = new ArrayList<>(); // A list of all registered items
+
     public static List<CustomItemGroup> unregisteredItemsList = List.of( // A list of the item groups to be registered
         // Weapons Melee
         new AntlerStaff(),
@@ -65,15 +67,6 @@ public class Main extends JavaPlugin {
         return instance;
     }
 
-    @Nullable
-    public CustomItem getCustomItemFromItemStack(@NotNull ItemStack itemStack) {
-        for (CustomItem customItem : registeredItems)
-            if (customItem.equals(itemStack))
-                return customItem;
-
-        return null;
-    }
-
     public void registerCustomItems() {
         try {
             for (CustomItemGroup customItemGroup : unregisteredItemsList) {
@@ -89,33 +82,60 @@ public class Main extends JavaPlugin {
         registeredItems.add(customItem);
     }
 
+    public static void addSmithingUpgrade(CustomItem inputItem, CustomItem outputItem) {
+        smithingUpgrades.put(inputItem, outputItem);
+    }
+
+    public static HashMap<CustomItem, CustomItem> getSmithingUpgrades() {
+        return smithingUpgrades;
+    }
+
     public static int nameSpaceKey = -1; // First item will get namespace key 0
     public static String getIncrementNameSpaceKey() {
         nameSpaceKey++;
         return String.valueOf(nameSpaceKey);
     }
 
+    public void runOnLoads() {
+        for (Reloadable reloadable : reloadables) {
+            reloadable.onLoad();
+        }
+    }
+
+    public void runOnEnables() {
+        for (Reloadable reloadable : reloadables) {
+            reloadable.onEnable();
+        }
+    }
+
+    public void runOnDisables() {
+        for (Reloadable reloadable : reloadables) {
+            reloadable.onDisable();
+        }
+    }
+
     @Override
     public void onLoad() {
         instance = this;
-        commandHandler = new CommandHandler(instance);
-        listenerHandler = new ListenerHandler(instance);
+        CommandHandler commandHandler = new CommandHandler(instance);
+        ListenerHandler listenerHandler = new ListenerHandler(instance);
+        new VanillaSmithing();
 
-        commandHandler.onLoad();
-        listenerHandler.onLoad();
+        reloadables.add(commandHandler);
+        reloadables.add(listenerHandler);
+
+        runOnLoads();
 
         registerCustomItems();
     }
 
     @Override
     public void onEnable() {
-        commandHandler.onEnable();
-        listenerHandler.onEnable();
+        runOnEnables();
     }
 
     @Override
     public void onDisable() {
-        commandHandler.onDisable();
-        listenerHandler.onDisable();
+        runOnDisables();
     }
 }

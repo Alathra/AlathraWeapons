@@ -20,7 +20,7 @@ public class ListenerHandler implements Reloadable {
 
     @Override
     public void onEnable() {
-        main.getServer().getPluginManager().registerEvents(new SmithingTableListener(main), main);
+        main.getServer().getPluginManager().registerEvents(new SmithingTableListener(), main);
     }
 
     @Override

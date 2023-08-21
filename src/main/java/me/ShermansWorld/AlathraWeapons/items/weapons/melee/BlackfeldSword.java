@@ -59,5 +59,7 @@ public class BlackfeldSword implements CustomItemGroup {
             .setIngredient('$', Material.RED_DYE)
             .setIngredient('^', Material.GOLD_INGOT)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

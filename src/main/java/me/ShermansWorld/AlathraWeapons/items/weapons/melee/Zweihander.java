@@ -51,5 +51,7 @@ public class Zweihander implements CustomItemGroup {
             .setIngredient('@', Material.IRON_SWORD)
             .setIngredient('%', Material.IRON_INGOT)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

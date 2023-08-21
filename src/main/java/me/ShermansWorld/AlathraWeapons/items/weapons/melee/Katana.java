@@ -51,5 +51,7 @@ public class Katana implements CustomItemGroup {
             .setIngredient('@', Material.IRON_BLOCK)
             .setIngredient('%', Material.STICK)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

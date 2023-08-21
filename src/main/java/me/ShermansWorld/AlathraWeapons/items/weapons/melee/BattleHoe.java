@@ -51,5 +51,7 @@ public class BattleHoe implements CustomItemGroup {
             .setIngredient('@', Material.IRON_INGOT)
             .setIngredient('%', Material.STICK)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }

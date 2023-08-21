@@ -36,7 +36,7 @@ public class Naginata implements CustomItemGroup {
 
         new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
             .shape(" @ ", " % ", "%  ")
-            .setIngredient('@', Material.DIAMOND)
+            .setIngredient('@', Material.DIAMOND_SWORD)
             .setIngredient('%', Material.STICK)
             .build();
 
@@ -51,5 +51,7 @@ public class Naginata implements CustomItemGroup {
             .setIngredient('@', Material.IRON_SWORD)
             .setIngredient('%', Material.STICK)
             .build();
+
+        Main.addSmithingUpgrade(diamondItem, netheriteItem);
     }
 }
