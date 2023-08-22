@@ -10,25 +10,25 @@ import me.ShermansWorld.AlathraWeapons.items.CustomItemGroup;
 import me.ShermansWorld.AlathraWeapons.recipes.RecipeFactory;
 import org.bukkit.Material;
 
-public class BoneKnife implements CustomItemGroup {
+public class BoneDagger implements CustomItemGroup {
     @Override
     public void register() throws InvalidMaterialException {
-        final CustomItem netheriteItem = new CustomItem("Netherite Bone Knife", "Netherite Bone Knife", 151, WeaponMaterial.NETHERITE, WeaponType.SWORD);
+        final CustomItem netheriteItem = new CustomItem("Netherite Bone Dagger", "Netherite Bone Dagger", 151, WeaponMaterial.NETHERITE, WeaponType.SWORD);
         Main.registerItem(netheriteItem);
 
-        final CustomItem diamondItem = new CustomItem("Diamond Bone Knife", "Diamond Bone Knife", 351, WeaponMaterial.DIAMOND, WeaponType.SWORD);
+        final CustomItem diamondItem = new CustomItem("Diamond Bone Dagger", "Diamond Bone Dagger", 351, WeaponMaterial.DIAMOND, WeaponType.SWORD);
         Main.registerItem(diamondItem);
 
-        final CustomItem goldItem = new CustomItem("Golden Bone Knife", "Golden Bone Knife", 651, WeaponMaterial.GOLD, WeaponType.SWORD);
+        final CustomItem goldItem = new CustomItem("Golden Bone Dagger", "Golden Bone Dagger", 651, WeaponMaterial.GOLD, WeaponType.SWORD);
         Main.registerItem(goldItem);
 
-        final CustomItem ironItem = new CustomItem("Iron Bone Knife", "Iron Bone Knife", 51, WeaponMaterial.IRON, WeaponType.SWORD);
+        final CustomItem ironItem = new CustomItem("Iron Bone Dagger", "Iron Bone Dagger", 51, WeaponMaterial.IRON, WeaponType.SWORD);
         Main.registerItem(ironItem);
 
-        final CustomItem stoneItem = new CustomItem("Stone Bone Knife", "Stone Bone Knife", 851, WeaponMaterial.STONE, WeaponType.SWORD);
+        final CustomItem stoneItem = new CustomItem("Stone Bone Dagger", "Stone Bone Dagger", 851, WeaponMaterial.STONE, WeaponType.SWORD);
         Main.registerItem(stoneItem);
 
-        final CustomItem woodenItem = new CustomItem("Wooden Bone Knife", "Wooden Bone Knife", 1051, WeaponMaterial.WOOD, WeaponType.SWORD);
+        final CustomItem woodenItem = new CustomItem("Wooden Bone Dagger", "Wooden Bone Dagger", 1051, WeaponMaterial.WOOD, WeaponType.SWORD);
         Main.registerItem(woodenItem);
 
         new RecipeFactory(Main.getIncrementNameSpaceKey(), netheriteItem.getItemStack(), RecipeShape.SHAPED)
