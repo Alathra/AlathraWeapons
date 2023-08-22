@@ -30,6 +30,7 @@ public class Main extends JavaPlugin {
         new BattleHoe(),
         new Bident(),
         new BlackfeldSword(),
+        new BoneKnife(),
         new CombatAxe(),
         new Dagger(),
         new DaneAxe(),

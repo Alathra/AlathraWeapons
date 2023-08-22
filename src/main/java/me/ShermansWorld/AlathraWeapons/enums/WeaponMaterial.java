@@ -5,5 +5,7 @@ public enum WeaponMaterial {
     DIAMOND,
     GOLD,
     IRON,
+    STONE,
+    WOOD,
     IGNORED
 }
