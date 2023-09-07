@@ -29,30 +29,28 @@ public class Cleaver implements CustomItemGroup {
         Main.registerItem(ironItem);
 
         new RecipeFactory(Main.getIncrementNameSpaceKey(), netheriteItem.getItemStack(), RecipeShape.SHAPED)
-        	.shape("$@ ", "$@ ", " # ")
+        	.shape("@@ ", "@@ ", " # ")
         	.setIngredient('@', Material.NETHERITE_INGOT)
-        	.setIngredient('$', Material.AMETHYST_SHARD)
         	.setIngredient('#', Material.STICK)
             .build();
 
         new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
-        	.shape("$@ ", "$@ ", " # ")
+        	.shape("@@ ", "@@ ", " # ")
         	.setIngredient('@', Material.DIAMOND)
-        	.setIngredient('$', Material.AMETHYST_SHARD)
         	.setIngredient('#', Material.STICK)
             .build();
 
         new RecipeFactory(Main.getIncrementNameSpaceKey(), goldItem.getItemStack(), RecipeShape.SHAPED)
         	.shape("$@ ", "$@ ", " # ")
         	.setIngredient('@', Material.GOLD_INGOT)
-        	.setIngredient('$', Material.FLINT)
+        	.setIngredient('$', Material.GOLD_NUGGET)
         	.setIngredient('#', Material.STICK)
             .build();
 
         new RecipeFactory(Main.getIncrementNameSpaceKey(), ironItem.getItemStack(), RecipeShape.SHAPED)
             .shape("$@ ", "$@ ", " # ")
             .setIngredient('@', Material.IRON_INGOT)
-            .setIngredient('$', Material.FLINT)
+            .setIngredient('$', Material.IRON_NUGGET)
             .setIngredient('#', Material.STICK)
             .build();
 
