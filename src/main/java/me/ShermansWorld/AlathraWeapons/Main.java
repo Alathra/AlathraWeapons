@@ -31,6 +31,7 @@ public class Main extends JavaPlugin {
         new Bident(),
         new BlackfeldSword(),
         new BoneDagger(),
+        new Cleaver(),
         new CombatAxe(),
         new Dagger(),
         new DaneAxe(),
