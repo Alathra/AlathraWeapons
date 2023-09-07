@@ -53,6 +53,10 @@ public class CustomItem {
                 case IGNORED -> new ItemStack(Material.BOW, 1);
                 case WOOD, STONE, IRON, DIAMOND, GOLD, NETHERITE -> throw new InvalidMaterialException("Tried to register item %s with invalid Material.".formatted(getDisplayName()));
             };
+            case TRIDENT -> switch (material) {
+            	case IGNORED -> new ItemStack(Material.TRIDENT, 1);
+            	case WOOD, STONE, IRON, DIAMOND, GOLD, NETHERITE -> throw new InvalidMaterialException("Tried to register item %s with invalid Material.".formatted(getDisplayName()));
+            };
         };
 
         final ItemMeta meta = this.itemStack.getItemMeta();
