@@ -61,6 +61,7 @@ public class Main extends JavaPlugin {
         new TwinBlade(),
         new WarHammer(),
         new Zweihander(),
+        new RusteyeCleaver(),
         // Weapons ranged
         new Faebow(),
         new Longbow(),
