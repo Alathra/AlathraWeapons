@@ -4,7 +4,6 @@ import me.ShermansWorld.AlathraWeapons.commands.CommandHandler;
 import me.ShermansWorld.AlathraWeapons.exceptions.InvalidMaterialException;
 import me.ShermansWorld.AlathraWeapons.items.CustomItemGroup;
 import me.ShermansWorld.AlathraWeapons.items.weapons.melee.*;
-import me.ShermansWorld.AlathraWeapons.items.weapons.ranged.AmethystTrident;
 import me.ShermansWorld.AlathraWeapons.items.weapons.ranged.Faebow;
 import me.ShermansWorld.AlathraWeapons.items.weapons.ranged.Longbow;
 import me.ShermansWorld.AlathraWeapons.listener.ListenerHandler;
@@ -64,8 +63,8 @@ public class Main extends JavaPlugin {
         new RusteyeCleaver(),
         // Weapons ranged
         new Faebow(),
-        new Longbow(),
-        new AmethystTrident()
+        new Longbow()
+        // new AmethystTrident() Don't enable. This weapon does not exist in the resource pack.
     );
 
     public static Main getInstance() {
