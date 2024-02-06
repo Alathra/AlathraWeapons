@@ -6,6 +6,7 @@ import me.ShermansWorld.AlathraWeapons.items.CustomItemGroup;
 import me.ShermansWorld.AlathraWeapons.items.weapons.melee.*;
 import me.ShermansWorld.AlathraWeapons.items.weapons.ranged.Faebow;
 import me.ShermansWorld.AlathraWeapons.items.weapons.ranged.Longbow;
+import me.ShermansWorld.AlathraWeapons.items.weapons.ranged.SkillstringBow;
 import me.ShermansWorld.AlathraWeapons.listener.ListenerHandler;
 import me.ShermansWorld.AlathraWeapons.recipes.VanillaSmithing;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -66,7 +67,8 @@ public class Main extends JavaPlugin {
         new DarkIronSword(),
         // Weapons ranged
         new Faebow(),
-        new Longbow()
+        new Longbow(),
+        new SkillstringBow()
         // new AmethystTrident() Don't enable. This weapon does not exist in the resource pack.
     );
 
