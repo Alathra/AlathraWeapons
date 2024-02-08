@@ -13,7 +13,7 @@ import org.bukkit.Material;
 public class SkillstringBow implements CustomItemGroup {
     @Override
     public void register() throws InvalidMaterialException {
-        final CustomItem bowItem = new CustomItem("Skillstring Bow", "Skillstring Bow", 14916, WeaponMaterial.IGNORED, WeaponType.BOW);
+        final CustomItem bowItem = new CustomItem("Silkstring Bow", "Silkstring Bow", 14916, WeaponMaterial.IGNORED, WeaponType.BOW);
         Main.registerItem(bowItem);
 
         new RecipeFactory(Main.getIncrementNameSpaceKey(), bowItem.getItemStack(), RecipeShape.SHAPED)

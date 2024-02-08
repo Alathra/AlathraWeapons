@@ -18,11 +18,11 @@ public class SunrayAxe implements CustomItemGroup {
         Main.registerItem(diamondItem);
 
         new RecipeFactory(Main.getIncrementNameSpaceKey(), diamondItem.getItemStack(), RecipeShape.SHAPED)
-            .shape("$%#", " @%", "@ $")
-            .setIngredient('@', Material.IRON_INGOT)
-            .setIngredient('%', Material.DIAMOND_BLOCK)
-            .setIngredient('$', Material.BLAZE_POWDER)
-            .setIngredient('#', Material.LAVA_BUCKET)
+            .shape("%@#", " $@", "$ %")
+            .setIngredient('@', Material.MAGMA_BLOCK)
+            .setIngredient('%', Material.BLAZE_POWDER)
+            .setIngredient('$', Material.GILDED_BLACKSTONE)
+            .setIngredient('#', Material.DIAMOND_BLOCK)
             .build();
     }
 }
