@@ -7,6 +7,11 @@ import me.ShermansWorld.AlathraWeapons.items.weapons.melee.*;
 import me.ShermansWorld.AlathraWeapons.items.weapons.ranged.Faebow;
 import me.ShermansWorld.AlathraWeapons.items.weapons.ranged.Longbow;
 import me.ShermansWorld.AlathraWeapons.items.weapons.ranged.SkillstringBow;
+import me.ShermansWorld.AlathraWeapons.items.weapons.shield.AspisShield;
+import me.ShermansWorld.AlathraWeapons.items.weapons.shield.HeaterShield;
+import me.ShermansWorld.AlathraWeapons.items.weapons.shield.KiteShield;
+import me.ShermansWorld.AlathraWeapons.items.weapons.shield.RoundShield;
+import me.ShermansWorld.AlathraWeapons.items.weapons.shield.ScutumShield;
 import me.ShermansWorld.AlathraWeapons.listener.ListenerHandler;
 import me.ShermansWorld.AlathraWeapons.recipes.VanillaSmithing;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -69,7 +74,13 @@ public class Main extends JavaPlugin {
         // Weapons ranged
         new Faebow(),
         new Longbow(),
-        new SkillstringBow()
+        new SkillstringBow(),
+        // Shields
+        new AspisShield(),
+        new HeaterShield(),
+        new KiteShield(),
+        new RoundShield(),
+        new ScutumShield()
         // new AmethystTrident() Don't enable. This weapon does not exist in the resource pack.
     );
 
