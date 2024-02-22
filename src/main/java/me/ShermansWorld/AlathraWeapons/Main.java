@@ -71,6 +71,8 @@ public class Main extends JavaPlugin {
         new RusteyePartisan(),
         new DarkIronSword(),
         new SunrayAxe(),
+        new Parashu(),
+        new Hammer(),
         // Weapons ranged
         new Faebow(),
         new Longbow(),
