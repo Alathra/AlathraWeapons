@@ -38,8 +38,8 @@ dependencies {
 
     implementation("com.github.milkdrinkers:colorparser:2.0.0")
 
-    implementation("dev.jorel:commandapi-bukkit-shade:9.0.3")
-    compileOnly("dev.jorel:commandapi-annotations:9.0.3")
+    implementation("dev.jorel:commandapi-bukkit-shade:9.3.0")
+    compileOnly("dev.jorel:commandapi-annotations:9.3.0")
     annotationProcessor("dev.jorel:commandapi-annotations:9.3.0")
 }
 
