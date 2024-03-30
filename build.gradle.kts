@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "me.ShermansWorld.AlathraWeapons"
-version = "2.1.1"
+version = "2.2.0"
 description = ""
 
 java {
@@ -40,7 +40,7 @@ dependencies {
 
     implementation("dev.jorel:commandapi-bukkit-shade:9.0.3")
     compileOnly("dev.jorel:commandapi-annotations:9.0.3")
-    annotationProcessor("dev.jorel:commandapi-annotations:9.0.3")
+    annotationProcessor("dev.jorel:commandapi-annotations:9.3.0")
 }
 
 tasks {
