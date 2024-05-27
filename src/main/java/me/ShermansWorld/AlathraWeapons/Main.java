@@ -73,6 +73,9 @@ public class Main extends JavaPlugin {
         new SunrayAxe(),
         new Parashu(),
         new Hammer(),
+        new Guisarme(),
+        new EricHammer(),
+        new KitsuneGohei(),
         // Weapons ranged
         new Faebow(),
         new Longbow(),
