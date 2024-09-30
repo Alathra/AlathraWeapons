@@ -76,6 +76,7 @@ public class Main extends JavaPlugin {
         new Guisarme(),
         new EricHammer(),
         new KitsuneGohei(),
+        new Lance(),
         // Weapons ranged
         new Faebow(),
         new Longbow(),
