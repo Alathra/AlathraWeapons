@@ -79,6 +79,7 @@ public class Main extends JavaPlugin {
         new KitsuneGohei(),
         new Honshu(),
 		new Lance(),
+        new LeviathanBlade(),
         // Weapons ranged
         new Faebow(),
         new Longbow(),
