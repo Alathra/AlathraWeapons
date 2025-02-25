@@ -76,6 +76,7 @@ public class Main extends JavaPlugin {
         new Hammer(),
         new Guisarme(),
         new EricHammer(),
+        new BattleHammer(),
         new KitsuneGohei(),
         new Honshu(),
 		new Lance(),
